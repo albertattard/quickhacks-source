@@ -1,0 +1,33 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Build Static Website
+
+jobs:
+  build-jekyll:
+    name: Build Jekyll Website
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build the site in the jekyll/builder container
+        run: |
+          docker run --rm \
+            -it \
+            --volume="${{ github.workspace }}:/srv/jekyll" \
+            --env JEKYLL_ENV=production \
+            jekyll/jekyll:3.8 jekyll build
+
+  install-assets:
+    name: Format and test CSS and JS
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm install
+      - run: npm test
