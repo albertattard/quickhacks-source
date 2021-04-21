@@ -15,8 +15,8 @@ jobs:
         run: |
           docker run --rm \
             --volume="${{ github.workspace }}:/srv/jekyll" \
-            --env JEKYLL_ENV=production \
-            jekyll/jekyll:4.0 jekyll build
+            jekyll/builder:4.0 \
+            /bin/bash -c "gem install bundler && chmod -R 777 /srv/jekyll && jekyll build && bundle exec just-the-docs rake search:init"
 
 # We don't have client side code yet
 #  install-assets:
