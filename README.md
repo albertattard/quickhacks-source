@@ -1,5 +1,7 @@
 # Quickhacks
 
+Run the site locally
+
 ```console
 $ docker run --rm -d \
     --name quickhacks \
@@ -10,11 +12,10 @@ $ docker run --rm -d \
     jekyll/jekyll:4.0 jekyll serve
 ```
 
+Build the site locally
 
 ```console
 $ docker run --rm \
-    --name quickhacks-builder \
     --volume="$(pwd):/srv/jekyll" \
-    --env JEKYLL_ENV=production \
-    jekyll/jekyll:4.0 jekyll build
+    jekyll/builder:4.2.0 /bin/bash -c "gem install bundler && jekyll build && bundle exec just-the-docs rake search:init"
 ```
