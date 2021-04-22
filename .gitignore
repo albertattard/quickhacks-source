@@ -6,4 +6,11 @@
 .jekyll-cache
 .jekyll-metadata
 _site
-vendor
+*.gem
+.bundle
+
+# Node
+node_modules
+
+# OS
+**/.DS_Store
