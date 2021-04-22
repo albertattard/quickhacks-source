@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Spring Boot Camp",
   "repository": "albertattard/quickhacks",
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "bugs": "https://github.com/albertattard/quickhacks/issues",
   "devDependencies": {
     "@primer/css": "^14.3.0",

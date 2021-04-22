@@ -39,13 +39,15 @@ aux_links:
     - "https://github.com/albertattard/quickhacks"
 
 # Footer content appears at the bottom of every page's main content
-footer_content: 'Copyright &copy; 2020-2020 Albert Attard. Distributed by an <a href="https://opensource.org/licenses/MIT">MIT license.</a>'
+footer_content: 'Copyright &copy; Albert Attard. Distributed by an <a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0.</a>'
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
 
 # Google Analytics Tracking
-ga_tracking: UA-12098401-6
+ga_tracking: G-PE3DWJG4PK
+# Use GDPR compliant Google Analytics settings
+ga_tracking_anonymize_ip: true
 
 plugins:
   - jekyll-seo-tag

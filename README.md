@@ -1,15 +1,21 @@
 # Quickhacks
 
-Run the site locally
+Run the site locally using docker
 
 ```console
 $ docker run --rm -d \
     --name quickhacks \
     --volume="$(pwd):/srv/jekyll" \
-    --volume="$(pwd)/vendor/bundle:/usr/local/bundle" \
+    --volume="$(pwd)/docker/volume/vendor/bundle:/usr/local/bundle" \
     --env JEKYLL_ENV=development \
     -p 4000:4000 \
-    jekyll/jekyll:4.0 jekyll serve
+    jekyll/jekyll:4.0 jekyll serve --host 0.0.0.0 --incremental
+```
+
+Stop the docker container
+
+```console
+$ docker stop quickhacks
 ```
 
 Build the site locally
