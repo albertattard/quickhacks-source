@@ -2,11 +2,11 @@
 layout: default
 title: Home
 nav_exclude: true
-description: "Spring Boot Camp"
+description: "Quickhacks"
 permalink: /
 ---
 
-# Spring Boot Camp
+# Quickhacks
 {: .fs-9 }
 
-Boot Camp for programmers interested to learn Spring and Spring Boot.
+A collection of _quickhacks_ collected throughout the years.

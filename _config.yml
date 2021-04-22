@@ -1,5 +1,5 @@
-title: Spring Boot Camp
-description: Spring Boot Camp
+title: Quickhacks
+description: Quickhacks
 baseurl: "/quickhacks" # the subpath of your site, e.g. /blog
 url: "https://albertattard.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -35,7 +35,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Spring Boot Camp on GitHub":
+  "Quickhacks on GitHub":
     - "https://github.com/albertattard/quickhacks"
 
 # Footer content appears at the bottom of every page's main content

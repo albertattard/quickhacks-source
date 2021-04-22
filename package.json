@@ -1,7 +1,7 @@
 {
   "name": "quickhacks",
   "version": "1.0.0",
-  "description": "Spring Boot Camp",
+  "description": "Quickhacks",
   "repository": "albertattard/quickhacks",
   "license": "Apache License 2.0",
   "bugs": "https://github.com/albertattard/quickhacks/issues",

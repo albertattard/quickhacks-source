@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Albert Attard"]
   spec.email         = ["albertattard@gmail.com"]
 
-  spec.summary       = %q{Spring Boot Camp}
+  spec.summary       = %q{Quickhacks}
   spec.homepage      = "https://github.com/albertattard/quickhacks"
   spec.license       = "Apache License 2.0"
 
