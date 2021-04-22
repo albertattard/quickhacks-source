@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Packaging gem... \n"
+gem build quickhacks.gemspec
+
+echo "Cleaning up... \n"
+git add *.gem
+git commit -m 'Bump quickhacks gem package'
