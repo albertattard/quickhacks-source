@@ -12,26 +12,7 @@ permalink: docs/docker/jupyter/
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. TOC
-   {:toc}
-
 ---
-
-## Docker and Docker Compose Version
-
-1. Docker
-
-    ```console
-    $ docker --version
-    Docker version 20.10.5, build 55c4c88
-    ```
-
-1. Docker Compose
-
-    ```console
-    $ docker-compose --version
-    docker-compose version 1.29.0, build 07737305
-    ```
 
 ## Docker Compose
 
@@ -89,3 +70,19 @@ RUN pip install ipython-sql psycopg2-binary pyspark
 # https://github.com/jupyter/docker-stacks/issues/915.
 HEALTHCHECK CMD pgrep "jupyter" > /dev/null || exit 1
 ```
+
+## Version
+
+1. Docker
+
+    ```console
+    $ docker --version
+    Docker version 20.10.5, build 55c4c88
+    ```
+
+1. Docker Compose
+
+    ```console
+    $ docker-compose --version
+    docker-compose version 1.29.0, build 07737305
+    ```

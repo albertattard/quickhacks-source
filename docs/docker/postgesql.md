@@ -12,26 +12,7 @@ permalink: docs/docker/postgresql/
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. TOC
-   {:toc}
-
 ---
-
-## Docker and Docker Compose Version
-
-1. Docker
-
-    ```console
-    $ docker --version
-    Docker version 20.10.5, build 55c4c88
-    ```
-
-1. Docker Compose
-
-    ```console
-    $ docker-compose --version
-    docker-compose version 1.29.0, build 07737305
-    ```
 
 ## Docker Compose
 
@@ -72,3 +53,19 @@ networks:
   quickhacks:
     name: "quickhacks-docker-postgresql-network"
 ```
+
+## Versions
+
+1. Docker
+
+    ```console
+    $ docker --version
+    Docker version 20.10.5, build 55c4c88
+    ```
+
+1. Docker Compose
+
+    ```console
+    $ docker-compose --version
+    docker-compose version 1.29.0, build 07737305
+    ```
