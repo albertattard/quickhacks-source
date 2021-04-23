@@ -12,6 +12,8 @@ permalink: docs/docker/cassandra/
 
 ## Docker Compose
 
+### File: `docker-compose.yml`
+
 ```yaml
 version: "3.9"
 

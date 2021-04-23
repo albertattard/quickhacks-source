@@ -12,6 +12,8 @@ permalink: docs/docker/jupyter/
 
 ## Docker Compose
 
+### File: `docker-compose.yml`
+
 ```yaml
 version: "3.9"
 
@@ -48,7 +50,7 @@ networks:
     name: "quickhacks-docker-jupyter-network"
 ```
 
-Dockerfile: `docker/jupyter/Dockerfile`
+### File: `docker/jupyter/Dockerfile`
 
 ```dockerfile
 # I had to downgrade as the newer version was raising a ResourceClosedError everytime I ran a query that returned

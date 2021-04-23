@@ -12,6 +12,8 @@ permalink: docs/docker/postgresql/
 
 ## Docker Compose
 
+### File: `docker-compose.yml`
+
 ```yaml
 version: "3.9"
 
