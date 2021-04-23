@@ -1,9 +1,9 @@
 ---
 layout: default
 title: EC2 (Publicly Accessible)
-parent: AWS (Terraform)
-nav_order: 1
-permalink: docs/aws/ec2-publicly-accessible/
+parent: Terraform (AWS)
+nav_order: 2
+permalink: docs/aws/terraform/ec2-publicly-accessible/
 ---
 
 # EC2 (Publicly Accessible)
@@ -14,7 +14,8 @@ permalink: docs/aws/ec2-publicly-accessible/
 
 ### File: `terraform.tf`
 
-The bucket `quickhacks-terraform` needs to be created beforehand.
+The bucket `quickhacks-terraform` needs to be created beforehand. Refer to 
+[create S3 bucket]({% link docs/aws/cli/s3.md %}#create-bucket) for more information about that.
 
 ```terraform
 terraform {
@@ -36,7 +37,8 @@ provider "aws" {
 
 ### File: `main.tf`
 
-The SSH key `Quickhacks Key` needs to be created beforehand.
+The key pair (SSH key) `Quickhacks SSH Key` needs to be created beforehand.  Refer to
+[create key pair]({% link docs/aws/cli/ssh-key.md %}#create-key-pair) for more information about that.
 
 ```terraform
 resource "aws_vpc" "quickhacks_vpc" {
@@ -184,6 +186,14 @@ output "instance_ip" {
   description = "Public IP of instance (or Elastic IP)"
   value       = coalesce(aws_eip.quickhacks_eip.*.public_ip, aws_instance.quickhacks_ec2.*.public_ip)
 }
+```
+
+## Connect
+
+Connect to the EC2 instance using the private key
+
+```console
+$ ssh -i "quickhacks.pem" ec2-user@$(AWS_PROFILE="quickhacks" terraform output -json instance_ip | jq -r ".[0]")
 ```
 
 ## Versions
