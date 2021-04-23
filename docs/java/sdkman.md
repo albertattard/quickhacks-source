@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Setup environment (SDKMAN)
-parent: Primer
+parent: Java
 nav_order: 1
-permalink: docs/primer/sdkman/
+permalink: docs/java/sdkman/
 ---
 
 # Setup environment (SDKMAN)
