@@ -2,12 +2,11 @@
 layout: default
 title: PostgreSQL
 parent: Docker
-nav_order: 1
+nav_order: 3
 permalink: docs/docker/postgresql/
 ---
 
 # PostgreSQL
-{: .no_toc }
 
 ---
 

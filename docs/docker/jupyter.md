@@ -2,12 +2,11 @@
 layout: default
 title: Jupyter
 parent: Docker
-nav_order: 1
+nav_order: 2
 permalink: docs/docker/jupyter/
 ---
 
 # Jupyter
-{: .no_toc }
 
 ---
 
