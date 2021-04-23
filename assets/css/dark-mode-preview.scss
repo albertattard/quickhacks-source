@@ -44,4 +44,3 @@ $logo: "{{ site.logo | absolute_url }}";
 // Import custom overrides
 //
 @import "./custom/custom";
-@import "./custom/copy-code";

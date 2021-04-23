@@ -8,8 +8,8 @@ permalink: docs/java/sdkman/
 
 # Setup environment (SDKMAN)
 
-SDKMAN is a command line tool that allows us to install different versions of Java, Gradle, Maven and more. SDKMAN also
-takes care of setting environment variables for you. Installing SDKMAN.
+[SDKMAN](https://sdkman.io/) is a command line tool that allows us to install different versions of Java, Gradle, Maven
+and more. SDKMAN also takes care of setting environment variables for you. Installing SDKMAN.
 
 1. Install
 
