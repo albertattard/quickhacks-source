@@ -20,7 +20,7 @@ permalink: docs/aws/terraform/ec2-publicly-accessible/
 ### File: `terraform.tf`
 
 The bucket `quickhacks-terraform` needs to be created beforehand. Refer to 
-[create S3 bucket]({% link docs/aws/cli/s3.md %}#create-bucket) for more information about that.
+[create S3 bucket]({{ "/docs/aws/cli/s3" | absolute_url }}#create-bucket) for more information about that.
 
 ```terraform
 terraform {
@@ -43,7 +43,7 @@ provider "aws" {
 ### File: `main.tf`
 
 The key pair (SSH key) `Quickhacks SSH Key` needs to be created beforehand.  Refer to
-[create key pair]({% link docs/aws/cli/ssh-key.md %}#create-key-pair) for more information about that.
+[create key pair]({{ "/docs/aws/cli/ssh-key" | absolute_url }}#create-key-pair) for more information about that.
 
 ```terraform
 resource "aws_vpc" "quickhacks_vpc" {
