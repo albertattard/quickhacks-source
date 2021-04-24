@@ -22,6 +22,14 @@ permalink: docs/aws/terraform/commands/
 
 1. Plan the changes
 
+   Without saving the plan.
+
+   ```bash
+   $ AWS_PROFILE="quickhacks" terraform plan
+   ```
+
+   Saving the plan so that it can be executed later on.
+
    ```bash
    $ AWS_PROFILE="quickhacks" terraform plan -out quickhacks.plan
    ```

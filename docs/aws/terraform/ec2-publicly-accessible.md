@@ -184,7 +184,7 @@ resource "aws_route_table_association" "quickhacks_route_table_association" {
 ```terraform
 output "instance_ip" {
   description = "Public IP of instance (or Elastic IP)"
-  value       = coalesce(aws_eip.quickhacks_eip.*.public_ip, aws_instance.quickhacks_ec2.*.public_ip)
+  value       = coalesce(aws_eip.quickhacks_eip.*.public_ip)
 }
 ```
 
