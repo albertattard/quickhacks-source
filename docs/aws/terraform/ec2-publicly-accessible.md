@@ -11,6 +11,10 @@ permalink: docs/aws/terraform/ec2-publicly-accessible/
 
 ---
 
+## AWS Resources
+
+![EC2 (Publicly Accessible)]({% link assets/images/aws/terraform/ec2-publicly-accessible.png %})
+
 ## Terraform
 
 ### File: `terraform.tf`
@@ -141,7 +145,6 @@ resource "aws_volume_attachment" "quickhacks_volume_attachment" {
 }
 
 resource "aws_eip" "quickhacks_eip" {
-  instance                  = aws_instance.quickhacks_ec2.id
   associate_with_private_ip = aws_network_interface.quickhacks_nic.private_ip
   vpc                       = true
 
@@ -184,7 +187,7 @@ resource "aws_route_table_association" "quickhacks_route_table_association" {
 
 ```terraform
 output "instance_ip" {
-  description = "Public IP of instance (or Elastic IP)"
+  description = "Elastic (public) IP, associated to the network interface connected to the EC2 instance"
   value       = coalesce(aws_eip.quickhacks_eip.*.public_ip)
 }
 ```

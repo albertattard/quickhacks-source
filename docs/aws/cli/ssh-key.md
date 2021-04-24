@@ -32,6 +32,12 @@ $ chmod 400 quickhacks.pem
 $ AWS_PROFILE="quickhacks" aws ec2 delete-key-pair --key-name "Quickhacks SSH Key"
 ```
 
+Delete the private key file.
+
+```console
+$ rm quickhacks.pem
+```
+
 ## Versions
 
 1. AWS CLI
