@@ -17,6 +17,8 @@ permalink: docs/aws/terraform/ec2-publicly-accessible/
 
 ## Terraform
 
+Terraform files: [ec2-publicly-accessible.zip]({{ "/assets/quickhacks/aws/terraform/ec2-publicly-accessible.zip" | absolute_url }})
+
 ### File: `terraform.tf`
 
 The bucket `quickhacks-terraform` needs to be created beforehand. Refer to 
