@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Lambda
+title: Lambda (API Gateway)
 parent: Terraform
 grand_parent: AWS
 nav_order: 3
-permalink: docs/aws/terraform/lambda/
+permalink: docs/aws/terraform/lambda-api-gateway/
 ---
 
-# Lambda
+# Lambda (API Gateway)
 
 ---
 
 ## Terraform
+
+Terraform files: [lambda-api-gateway.zip]({{ "/assets/quickhacks/aws/terraform/lambda-api-gateway.zip" | absolute_url }})
 
 ### File: `terraform.tf`
 
@@ -21,7 +23,7 @@ The bucket `quickhacks-terraform` needs to be created beforehand.
 terraform {
   backend "s3" {
     bucket = "quickhacks-terraform"
-    key    = "aws/lambda/terraform.tfstate"
+    key    = "aws/lambda-api-gateway/terraform.tfstate"
     region = "eu-central-1"
   }
 }
@@ -43,7 +45,7 @@ and `handler` as required.
 ```terraform
 locals {
    lambda_zip_file = "${path.module}/lambda.zip"
-   lambda_function_name = "lambda-function"
+   lambda_function_name = "quickhacks-lambda-function"
 }
 
 resource "aws_iam_role" "quickhacks_iam_for_lambda" {
@@ -209,9 +211,19 @@ resource "aws_iam_role_policy_attachment" "quickhacks_lambda_logging_policy_atta
 ### File: `output.tf`
 
 ```terraform
-output "instance_ip" {
-  description = "Public IP of instance (or Elastic IP)"
-  value       = coalesce(aws_eip.quickhacks_eip.*.public_ip, aws_instance.quickhacks_ec2.*.public_ip)
+output "invoke_url" {
+  value = aws_api_gateway_deployment.quickhacks_deployment.invoke_url
+}
+```
+
+## Invoke Lambda
+
+Make an HTTP request to the lambda function
+
+```console
+$ curl $(AWS_PROFILE="quickhacks" terraform output -json invoke_url | jq -r ".") | jq
+{
+  "quickhacks": "Lambda (API Gateway)"
 }
 ```
 

@@ -45,7 +45,7 @@ provider "aws" {
 ### File: `main.tf`
 
 The key pair (SSH key) `Quickhacks SSH Key` needs to be created beforehand.  Refer to
-[create key pair]({{ "/docs/aws/cli/ssh-key" | absolute_url }}#create-key-pair) for more information about that.
+[create key pair]({{ "/docs/aws/cli/key-pair" | absolute_url }}#create-key-pair) for more information about that.
 
 ```terraform
 resource "aws_vpc" "quickhacks_vpc" {
@@ -194,7 +194,7 @@ output "instance_ip" {
 }
 ```
 
-## Connect
+## SSH to EC2
 
 Connect to the EC2 instance using the private key
 
