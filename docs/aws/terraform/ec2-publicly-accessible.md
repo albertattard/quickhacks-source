@@ -11,6 +11,10 @@ permalink: docs/aws/terraform/ec2-publicly-accessible/
 
 ---
 
+## Acknowledgements
+
+_Punit Kumar_, for reviewing the diagram and providing feedback.
+
 ## AWS Resources
 
 ![EC2 (Publicly Accessible)]({{ "/assets/images/aws/terraform/ec2-publicly-accessible.png" | absolute_url }})
