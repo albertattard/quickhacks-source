@@ -1,12 +1,12 @@
 ---
 layout: default
-title: CLI (AWS)
+title: CLI
 parent: AWS
 nav_order: 1
 has_children: true
 permalink: docs/aws/cli/
 ---
 
-# AWS (CLI)
+# CLI
 
-A set of AWS CLI quickhacks.
+A set of [AWS CLI](https://aws.amazon.com/cli/) quickhacks.
