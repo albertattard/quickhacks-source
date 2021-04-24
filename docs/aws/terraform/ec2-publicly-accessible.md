@@ -13,7 +13,7 @@ permalink: docs/aws/terraform/ec2-publicly-accessible/
 
 ## AWS Resources
 
-![EC2 (Publicly Accessible)]({% link assets/images/aws/terraform/ec2-publicly-accessible.png %})
+![EC2 (Publicly Accessible)]({% link quickhacks/assets/images/aws/terraform/ec2-publicly-accessible.png %})
 
 ## Terraform
 
