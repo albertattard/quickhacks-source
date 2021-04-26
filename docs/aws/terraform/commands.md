@@ -15,10 +15,22 @@ permalink: docs/aws/terraform/commands/
    $ AWS_PROFILE="quickhacks" terraform init
    ```
 
+   Or, use the `-chdir` argument to run the command from a different directory
+
+   ```bash
+   $ AWS_PROFILE="quickhacks" terraform -chdir=terraform init
+   ```
+
 1. Format code (recursive)
 
    ```bash
    $ terraform fmt -recursive
+   ```
+
+   Or, use the `-chdir` argument to run the command from a different directory
+
+   ```bash
+   $ AWS_PROFILE="quickhacks" terraform -chdir=terraform fmt -recursive
    ```
 
 1. Plan the changes
@@ -41,8 +53,20 @@ permalink: docs/aws/terraform/commands/
    $ AWS_PROFILE="quickhacks" terraform apply
    ```
 
+   Or, use the `-chdir` argument to run the command from a different directory
+
+   ```bash
+   $ AWS_PROFILE="quickhacks" terraform -chdir=terraform apply
+   ```
+
 1. Destroy the resources
 
    ```bash
    $ AWS_PROFILE="quickhacks" terraform destroy
+   ```
+
+   Or, use the `-chdir` argument to run the command from a different directory
+
+   ```bash
+   $ AWS_PROFILE="quickhacks" terraform -chdir=terraform destroy
    ```

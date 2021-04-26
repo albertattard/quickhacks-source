@@ -25,7 +25,7 @@ Terraform files: [ec2-publicly-accessible.zip]({{ "/assets/quickhacks/aws/terraf
 
 ### File: `terraform.tf`
 
-The bucket `quickhacks-terraform` needs to be created beforehand. Refer to 
+The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 [create S3 bucket]({{ "/docs/aws/cli/s3" | absolute_url }}#create-bucket) for more information about that.
 
 ```terraform
