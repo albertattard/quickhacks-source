@@ -3,7 +3,7 @@ layout: default
 title: Lambda (API Gateway)
 parent: Terraform
 grand_parent: AWS
-nav_order: 3
+nav_order: 4
 permalink: docs/aws/terraform/lambda-api-gateway/
 ---
 
@@ -235,3 +235,20 @@ $ curl $(AWS_PROFILE="quickhacks" terraform output -json invoke_url | jq -r ".")
     $ terraform --version
     Terraform v0.15.0
     ```
+
+1. CURl
+
+   ```console
+   $ curl --version
+   curl 7.64.1 (x86_64-apple-darwin20.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.41.0
+   Release-Date: 2019-03-27
+   Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtsp smb smbs smtp smtps telnet tftp
+   Features: AsynchDNS GSS-API HTTP2 HTTPS-proxy IPv6 Kerberos Largefile libz MultiSSL NTLM NTLM_WB SPNEGO SSL UnixSockets
+   ```
+
+1. jq
+
+   ```console
+   $ jq --version
+   jq-1.6
+   ```

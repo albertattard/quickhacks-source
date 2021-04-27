@@ -3,7 +3,7 @@ layout: default
 title: EC2 (Publicly Accessible)
 parent: Terraform
 grand_parent: AWS
-nav_order: 2
+nav_order: 3
 permalink: docs/aws/terraform/ec2-publicly-accessible/
 ---
 

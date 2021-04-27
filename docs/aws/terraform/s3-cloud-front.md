@@ -3,7 +3,7 @@ layout: default
 title: S3 & Cloud Front
 parent: Terraform
 grand_parent: AWS
-nav_order: 4
+nav_order: 5
 permalink: docs/aws/terraform/s3-cloud-front/
 ---
 

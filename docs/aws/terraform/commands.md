@@ -30,7 +30,7 @@ permalink: docs/aws/terraform/commands/
    Or, use the `-chdir` argument to run the command from a different directory
 
    ```bash
-   $ AWS_PROFILE="quickhacks" terraform -chdir=terraform fmt -recursive
+   $ terraform -chdir=terraform fmt -recursive
    ```
 
 1. Plan the changes
