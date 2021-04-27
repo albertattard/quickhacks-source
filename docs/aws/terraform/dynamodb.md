@@ -4,7 +4,7 @@ title: DynamoDB
 parent: Terraform
 grand_parent: AWS
 nav_order: 2
-permalink: docs/aws/terraform/dynamodb.md/
+permalink: docs/aws/terraform/dynamodb/
 ---
 
 # DynamoDB
@@ -13,7 +13,7 @@ permalink: docs/aws/terraform/dynamodb.md/
 
 ## Terraform
 
-Terraform files: [dynamodb.md]({{ "/assets/quickhacks/aws/terraform/dynamodb.md" | absolute_url }}).
+Terraform files: [dynamodb.zip]({{ "/assets/quickhacks/aws/terraform/dynamodb.zip" | absolute_url }}).
 
 ### File: `terraform.tf`
 
