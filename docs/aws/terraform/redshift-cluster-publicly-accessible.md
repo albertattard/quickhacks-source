@@ -9,8 +9,6 @@ permalink: docs/aws/terraform/redshift-cluster-publicly-accessible/
 
 # Redshift Cluster (Publicly Accessible)
 
-{% include custom/pending.html details="Still working on this quickhack" %}
-
 ---
 
 ## Terraform
