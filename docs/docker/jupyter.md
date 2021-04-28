@@ -14,60 +14,15 @@ permalink: docs/docker/jupyter/
 
 ### File: `docker-compose.yml`
 
-```yaml
-version: "3.9"
-
-services:
-  jupyter:
-    container_name: "quickhacks-docker-jupyter-jupyter"
-    build: "docker/jupyter"
-    ports:
-      - "8888:8888"
-    volumes:
-      - "jupyter:/home/jovyan/work"
-    healthcheck:
-      start_period: "5s"
-      interval: "5s"
-      retries: 5
-    restart: "always"
-    depends_on:
-      db:
-        condition: "service_healthy"
-    networks:
-      - "quickhacks"
-
-volumes:
-  jupyter:
-    name: "quickhacks-docker-jupyter-jupyter"
-    driver: "local"
-    driver_opts:
-      type: "none"
-      o: "bind"
-      device: "./work"
-
-networks:
-  quickhacks:
-    name: "quickhacks-docker-jupyter-network"
-```
+{% highlight yaml %}
+{% include quickhacks/docker/jupyter/docker-compose.yml %}
+{% endhighlight %}
 
 ### File: `docker/jupyter/Dockerfile`
 
-```dockerfile
-# I had to downgrade as the newer version was raising a ResourceClosedError everytime I ran a query that returned
-# nothing, such as an INSERT statement.
-# FROM jupyter/datascience-notebook:python-3.8.8
-FROM jupyter/datascience-notebook:python-3.7.6
-
-USER root
-RUN apt update && apt install -y gnupg2 wget ca-certificates postgresql postgresql-contrib default-jdk
-
-USER jovyan
-RUN pip install ipython-sql psycopg2-binary pyspark
-
-# There does not seem to be a standard way to have healthcheck for Jupyer notbooks according to
-# https://github.com/jupyter/docker-stacks/issues/915.
-HEALTHCHECK CMD pgrep "jupyter" > /dev/null || exit 1
-```
+{% highlight yaml %}
+{% include quickhacks/docker/jupyter/docker/jupyter/Dockerfile %}
+{% endhighlight %}
 
 ## Version
 

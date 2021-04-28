@@ -14,43 +14,9 @@ permalink: docs/docker/postgresql/
 
 ### File: `docker-compose.yml`
 
-```yaml
-version: "3.9"
-
-services:
-  db:
-    container_name: "quickhacks-docker-postgresql-db"
-    image: "postgres:13.2-alpine"
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_DB: "db-quickhacks"
-      POSTGRES_PASSWORD: "db-password"
-      POSTGRES_USER: "db-username"
-    volumes:
-      - "postgres-db:/var/lib/postgresql/data"
-    healthcheck:
-      test: [ "CMD", "pg_isready", "-U", "db-username" ]
-      start_period: "5s"
-      interval: "5s"
-      retries: 5
-    restart: "always"
-    networks:
-      - "quickhacks"
-
-volumes:
-  postgres-db:
-    name: "quickhacks-docker-postgresql-db"
-    driver: "local"
-    driver_opts:
-      type: "none"
-      o: "bind"
-      device: "./postgres"
-
-networks:
-  quickhacks:
-    name: "quickhacks-docker-postgresql-network"
-```
+{% highlight yaml %}
+{% include quickhacks/docker/postgresql/docker-compose.yml %}
+{% endhighlight %}
 
 ## Versions
 
