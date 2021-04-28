@@ -7,6 +7,20 @@ resource "aws_s3_bucket" "auickhacks_bucket" {
   bucket = local.s3_bucket_name
   acl    = "public-read"
 
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        sse_algorithm = "AES256"
+      }
+    }
+  }
+
+  cors_rule {
+    allowed_origins = ["*"]
+    allowed_methods = ["GET", "HEAD"]
+    allowed_headers = ["*"]
+  }
+
   website {
     index_document = "index.html"
     error_document = "error.html"
