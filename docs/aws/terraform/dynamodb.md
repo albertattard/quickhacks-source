@@ -13,61 +13,26 @@ permalink: docs/aws/terraform/dynamodb/
 
 ## Terraform
 
-Terraform files: [dynamodb.zip]({{ "/assets/quickhacks/aws/terraform/dynamodb.zip" | absolute_url }}).
-
 ### File: `terraform.tf`
 
 The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 [create S3 bucket]({{ "/docs/aws/cli/s3" | absolute_url }}#create-bucket) for more information about that.
 
-```terraform
-terraform {
-  backend "s3" {
-    bucket = "quickhacks-terraform"
-    key    = "aws/dynamodb/terraform.tfstate"
-    region = "eu-central-1"
-  }
-}
-```
+{% highlight terraform %}
+{% include quickhacks/aws/terraform/dynamodb/terraform.tf %}
+{% endhighlight %}
 
 ### File: `providers.tf`
 
-```terraform
-provider "aws" {
-  region = "eu-central-1"
-}
-```
+{% highlight terraform %}
+{% include quickhacks/aws/terraform/dynamodb/providers.tf %}
+{% endhighlight %}
 
 ### File: `main.tf`
 
-```terraform
-resource "aws_dynamodb_table" "quickhacks_table" {
-   name           = "Contacts"
-   hash_key       = "Name"
-   read_capacity  = 20
-   write_capacity = 20
-
-   attribute {
-      name = "Name"
-      type = "S"
-   }
-
-   tags = {
-      Name      = "Quickhacks - DynamoDB Table"
-      ManagedBy = "Terraform"
-   }
-}
-
-resource "aws_dynamodb_table_item" "quickhacks_data" {
-   table_name = aws_dynamodb_table.quickhacks_table.name
-   hash_key   = aws_dynamodb_table.quickhacks_table.hash_key
-   item       = <<EOF
-{
-  "Name": {"S": "Albert"}
-}
-EOF
-}
-```
+{% highlight terraform %}
+{% include quickhacks/aws/terraform/dynamodb/main.tf %}
+{% endhighlight %}
 
 ## Fetch item by key
 
