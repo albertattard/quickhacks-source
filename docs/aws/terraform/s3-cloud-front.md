@@ -104,7 +104,7 @@ resource "aws_s3_bucket_object" "quickhacks_bucket_object" {
   etag         = each.value.digests.md5
 
   tags = {
-    Name      = "Quickhacks - Bucket Object"
+    Name      = "Quickhacks - Bucket Object ${each.value.source_path}"
     Quickhack = "S3 & Cloud Front"
     ManagedBy = "Terraform"
   }
