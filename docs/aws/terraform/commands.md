@@ -11,25 +11,25 @@ permalink: docs/aws/terraform/commands/
 
 1. Initialise terraform
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform init
    ```
 
    Or, use the `-chdir` argument to run the command from a different directory
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform -chdir=terraform init
    ```
 
 1. Format code (recursive)
 
-   ```bash
+   ```console
    $ terraform fmt -recursive
    ```
 
    Or, use the `-chdir` argument to run the command from a different directory
 
-   ```bash
+   ```console
    $ terraform -chdir=terraform fmt -recursive
    ```
 
@@ -37,36 +37,54 @@ permalink: docs/aws/terraform/commands/
 
    Without saving the plan.
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform plan
    ```
 
    Saving the plan so that it can be executed later on.
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform plan -out quickhacks.plan
    ```
 
 1. Apply the changes
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform apply
    ```
 
    Or, use the `-chdir` argument to run the command from a different directory
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform -chdir=terraform apply
+   ```
+
+1. Output values
+
+   ```console
+   $ AWS_PROFILE="quickhacks" terraform output
+   ```
+
+   Or, use the `-chdir` argument to run the command from a different directory
+
+   ```console
+   $ AWS_PROFILE="quickhacks" terraform -chdir=terraform output
+   ```
+
+   Change the format to JSON
+
+   ```console
+   $ AWS_PROFILE="quickhacks" terraform output -json
    ```
 
 1. Destroy the resources
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform destroy
    ```
 
    Or, use the `-chdir` argument to run the command from a different directory
 
-   ```bash
+   ```console
    $ AWS_PROFILE="quickhacks" terraform -chdir=terraform destroy
    ```
