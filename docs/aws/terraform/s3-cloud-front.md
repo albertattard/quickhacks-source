@@ -3,7 +3,7 @@ layout: default
 title: S3 & Cloud Front
 parent: Terraform
 grand_parent: AWS
-nav_order: 5
+nav_order: 6
 permalink: docs/aws/terraform/s3-cloud-front/
 ---
 
@@ -13,7 +13,7 @@ permalink: docs/aws/terraform/s3-cloud-front/
 
 ## Terraform
 
-Terraform files: [s3-cloud-front.md]({{ "/assets/quickhacks/aws/terraform/s3-cloud-front.md" | absolute_url }}).
+Terraform files: [s3-cloud-front.zip]({{ "/assets/quickhacks/aws/terraform/s3-cloud-front.zip" | absolute_url }}).
 
 {% include custom/note.html details="Deployment may take several minute to create all required AWS resources. Don't be
 alarmed if a simple deployment of few files take several minutes to complete." %}
@@ -89,6 +89,7 @@ EOF
 
   tags = {
     Name      = "Quickhacks - Bucket"
+    Quickhack = "S3 & Cloud Front"
     ManagedBy = "Terraform"
   }
 }
@@ -104,6 +105,7 @@ resource "aws_s3_bucket_object" "quickhacks_bucket_object" {
 
   tags = {
     Name      = "Quickhacks - Bucket Object"
+    Quickhack = "S3 & Cloud Front"
     ManagedBy = "Terraform"
   }
 }
@@ -147,6 +149,7 @@ resource "aws_cloudfront_distribution" "quickhacks_s3_distribution" {
 
   tags = {
     Name      = "Quickhacks - S3 Distribution"
+    Quickhack = "S3 & Cloud Front"
     ManagedBy = "Terraform"
   }
 }
