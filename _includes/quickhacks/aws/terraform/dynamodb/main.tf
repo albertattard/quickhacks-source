@@ -21,7 +21,9 @@ resource "aws_dynamodb_table_item" "quickhacks_data" {
   hash_key   = aws_dynamodb_table.quickhacks_table.hash_key
   item       = <<EOF
 {
-  "Name": {"S": "Albert"}
+  "Name": {"S": "Albert"},
+  "Surname": {"S": "Attard"},
+  "Location": {"S": "Köln"}
 }
 EOF
 }

@@ -40,6 +40,12 @@ The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 $ AWS_PROFILE="quickhacks" aws dynamodb get-item --table-name Contacts --key "{\"Name\": {\"S\": \"Albert\"}}"
 {
     "Item": {
+        "Location": {
+            "S": "Köln"
+        },
+        "Surname": {
+            "S": "Attard"
+        },
         "Name": {
             "S": "Albert"
         }
