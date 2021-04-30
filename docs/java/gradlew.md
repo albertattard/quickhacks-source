@@ -8,6 +8,22 @@ permalink: docs/java/gradlew/
 
 # Gradle Wrapper
 
+## Blank Projects
+
+A [blank project containing just the gradle wrapper](https://github.com/albertattard/blank-gradle-project).
+
+- SSH
+
+  ```console
+  $ git clone git@github.com:albertattard/blank-gradle-project.git
+  ```
+
+- HTTPS
+
+  ```console
+  $ git clone https://github.com/albertattard/blank-gradle-project.git
+  ```
+
 ## Version
 
 ```console
