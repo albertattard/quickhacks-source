@@ -8,19 +8,19 @@ name: Build Site
 jobs:
 
   site:
-    name: Build Jekyll site (v4.2.0)
+    name: Build and Publish site
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout code from Quickhacks source repository
         uses: actions/checkout@main
 
-      - name: Build the site in the jekyll/builder container
+      - name: Build the site using the jekyll/builder container
         run: |
           docker run --rm \
           --volume="${{ github.workspace }}:/srv/jekyll" \
           jekyll/builder:4.2.0 /bin/bash -c "gem install bundler && chmod -R 777 /srv/jekyll && jekyll build && bundle exec just-the-docs rake search:init"
 
-      - name: Publish to GitHub Pages repo
+      - name: Publish generated site to the Quickhacks repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
