@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>style Binding</title>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Styles</h1>
+
+      <!-- style Binding -->
+      <p :style="{ backgroundColor: bc, color: fc}">style Binding</p>
+
+    </div>
+
+    <!-- Import and mount the App -->
+    <script src="./main.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
+  </body>
+</html>
