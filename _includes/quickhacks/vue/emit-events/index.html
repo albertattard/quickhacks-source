@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Components</title>
+    <title>Emit Events</title>
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.prod.js"></script>
   </head>
   <body>
@@ -10,7 +10,7 @@
       <h1>Counter</h1>
       <p>Clicks: {{ clicks }}</p>
 
-      <!-- Include the components -->
+      <!-- Listen to the events emitted by the component -->
       <controls-component
         @increase-counter="increment"
         @decrease-counter="decrementIfGreaterThanZero"

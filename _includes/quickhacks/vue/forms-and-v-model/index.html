@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms and v-model</title>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.prod.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Reviews</h1>
+
+      <!-- Prevent from being submitted automatically and wire it to invoke our 'onSubmit()' method instead -->
+      <form @submit.prevent="submitReview">
+
+        <div v-if="warning.show">{{ warning.message }}</div>
+
+        <!-- String/text input -->
+        <div>
+          <label for="name">Name: </label>
+          <!-- Bind the property using the v-model -->
+          <input id="name" v-model="name" />
+        </div>
+
+        <!-- Numeric input -->
+        <div>
+          <label for="rating">Ratings: </label>
+          <!-- Bind the property using the v-model and type cast it as a number -->
+          <select id="rating" v-model.number="rating">
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+          </select>
+        </div>
+
+        <!-- Boolean input -->
+        <div>
+          <label for="publish">Publish: </label>
+          <!-- Bind the property using the v-model-->
+          <input id="publish" v-model="publish" type="checkbox" />
+        </div>
+
+        <input type="submit" value="Submit Review" />
+      </form>
+
+      <!-- The properties are updated automatically -->
+      <h2>Bound properties</h2>
+      <div>
+        <div>Name: {{ name }}</div>
+        <div>Rating: {{ rating }}</div>
+        <div v-if="publish">Publish review</div>
+      </div>
+
+      <!-- The reset button will update both -->
+      <button @click="reset">Reset</button>
+
+    </div>
+
+    <!-- Import and mount the App -->
+    <script src="./main.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
+  </body>
+</html>
