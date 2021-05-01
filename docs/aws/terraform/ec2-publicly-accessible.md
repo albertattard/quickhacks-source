@@ -27,13 +27,13 @@ The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 [create S3 bucket]({{ "/docs/aws/cli/s3" | absolute_url }}#create-bucket) for more information about that.
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/ec2-publicly-accessible/terraform.tf %}
+{% raw_include quickhacks/aws/terraform/ec2-publicly-accessible/terraform.tf %}
 {% endhighlight %}
 
 ### File: `providers.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/ec2-publicly-accessible/providers.tf %}
+{% raw_include quickhacks/aws/terraform/ec2-publicly-accessible/providers.tf %}
 {% endhighlight %}
 
 ### File: `main.tf`
@@ -42,13 +42,13 @@ The key pair (SSH key) `Quickhacks SSH Key` needs to be created beforehand.  Ref
 [create key pair]({{ "/docs/aws/cli/key-pair" | absolute_url }}#create-key-pair) for more information about that.
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/ec2-publicly-accessible/main.tf %}
+{% raw_include quickhacks/aws/terraform/ec2-publicly-accessible/main.tf %}
 {% endhighlight %}
 
 ### File: `output.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/ec2-publicly-accessible/output.tf %}
+{% raw_include quickhacks/aws/terraform/ec2-publicly-accessible/output.tf %}
 {% endhighlight %}
 
 ## SSH to EC2

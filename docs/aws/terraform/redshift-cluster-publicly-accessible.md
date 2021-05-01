@@ -13,7 +13,7 @@ permalink: docs/aws/terraform/redshift-cluster-publicly-accessible/
 
 ## Terraform
 
-{% include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}
+{% raw_include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}
 
 ### File: `terraform.tf`
 
@@ -21,25 +21,25 @@ The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 [create S3 bucket]({{ "/docs/aws/cli/s3" | absolute_url }}#create-bucket) for more information about that.
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/terraform.tf %}
+{% raw_include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/terraform.tf %}
 {% endhighlight %}
 
 ### File: `providers.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/providers.tf %}
+{% raw_include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/providers.tf %}
 {% endhighlight %}
 
 ### File: `main.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/main.tf %}
+{% raw_include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/main.tf %}
 {% endhighlight %}
 
 ### File: `output.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/output.tf %}
+{% raw_include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/output.tf %}
 {% endhighlight %}
 
 ## Connect to the database
@@ -48,7 +48,7 @@ PostgreSQL client can be used to connect to Redshift. The following Dockerfile i
 Ubuntu image and can be used to connect to the Redshift cluster.
 
 {% highlight Dockerfile %}
-{% include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/Dockerfile %}
+{% raw_include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/Dockerfile %}
 {% endhighlight %}
   
 1. Build the docker image

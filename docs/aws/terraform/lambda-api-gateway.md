@@ -19,13 +19,13 @@ The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 [create S3 bucket]({{ "/docs/aws/cli/s3" | absolute_url }}#create-bucket) for more information about that.
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/lambda-api-gateway/terraform.tf %}
+{% raw_include quickhacks/aws/terraform/lambda-api-gateway/terraform.tf %}
 {% endhighlight %}
 
 ### File: `providers.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/lambda-api-gateway/providers.tf %}
+{% raw_include quickhacks/aws/terraform/lambda-api-gateway/providers.tf %}
 {% endhighlight %}
 
 ### File: `main.tf`
@@ -34,13 +34,13 @@ The Lambda distribution file `lambda.zip` is saved in the same folder as the `ma
 and `handler` as required.
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/lambda-api-gateway/main.tf %}
+{% raw_include quickhacks/aws/terraform/lambda-api-gateway/main.tf %}
 {% endhighlight %}
 
 ### File: `output.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/lambda-api-gateway/output.tf %}
+{% raw_include quickhacks/aws/terraform/lambda-api-gateway/output.tf %}
 {% endhighlight %}
 
 ## Invoke Lambda

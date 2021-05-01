@@ -15,7 +15,7 @@ permalink: docs/docker/cassandra/
 ### File: `docker-compose.yml`
 
 {% highlight yaml %}
-{% include quickhacks/docker/cassandra/docker-compose.yml %}
+{% raw_include quickhacks/docker/cassandra/docker-compose.yml %}
 {% endhighlight %}
 
 ## Versions

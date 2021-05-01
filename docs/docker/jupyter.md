@@ -15,13 +15,13 @@ permalink: docs/docker/jupyter/
 ### File: `docker-compose.yml`
 
 {% highlight yaml %}
-{% include quickhacks/docker/jupyter/docker-compose.yml %}
+{% raw_include quickhacks/docker/jupyter/docker-compose.yml %}
 {% endhighlight %}
 
 ### File: `docker/jupyter/Dockerfile`
 
 {% highlight yaml %}
-{% include quickhacks/docker/jupyter/docker/jupyter/Dockerfile %}
+{% raw_include quickhacks/docker/jupyter/docker/jupyter/Dockerfile %}
 {% endhighlight %}
 
 ## Version

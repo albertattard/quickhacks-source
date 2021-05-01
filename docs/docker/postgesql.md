@@ -15,7 +15,7 @@ permalink: docs/docker/postgresql/
 ### File: `docker-compose.yml`
 
 {% highlight yaml %}
-{% include quickhacks/docker/postgresql/docker-compose.yml %}
+{% raw_include quickhacks/docker/postgresql/docker-compose.yml %}
 {% endhighlight %}
 
 ## Versions

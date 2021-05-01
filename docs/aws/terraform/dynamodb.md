@@ -19,19 +19,19 @@ The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 [create S3 bucket]({{ "/docs/aws/cli/s3" | absolute_url }}#create-bucket) for more information about that.
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/dynamodb/terraform.tf %}
+{% raw_include quickhacks/aws/terraform/dynamodb/terraform.tf %}
 {% endhighlight %}
 
 ### File: `providers.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/dynamodb/providers.tf %}
+{% raw_include quickhacks/aws/terraform/dynamodb/providers.tf %}
 {% endhighlight %}
 
 ### File: `main.tf`
 
 {% highlight terraform %}
-{% include quickhacks/aws/terraform/dynamodb/main.tf %}
+{% raw_include quickhacks/aws/terraform/dynamodb/main.tf %}
 {% endhighlight %}
 
 ## Fetch item by key
