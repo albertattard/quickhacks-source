@@ -10,9 +10,16 @@
       <h1>Ingredients</h1>
 
       <!-- for Loop -->
+      <!-- without index -->
       <ul>
         <li v-for="ingredient in ingredients" :key="ingredient.id">{{ ingredient.name }}</li>
       </ul>
+
+      <!-- with index -->
+      <div v-for="(ingredient, index) in ingredients" :key="ingredient.id">
+        <span>Index [{{ index }}] - </span>
+        <span>{{ ingredient.name }}</span>
+      </div>
 
     </div>
 

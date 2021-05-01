@@ -4,5 +4,10 @@ const app = Vue.createApp({
             name: 'Albert',
             surname: 'Attard',
         }
+    },
+    computed: {
+        fullName() {
+            return this.name + " " + this.surname;
+        }
     }
 })
