@@ -6,7 +6,6 @@ app.component('outer-component', {
         }
     },
     template:
-    /*html*/
         `
         <h1>Component</h1>
         <p>{{ food }}<span v-if="speciality"> (Speciality)</span></p>

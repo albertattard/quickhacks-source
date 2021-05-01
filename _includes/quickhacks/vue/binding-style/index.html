@@ -10,7 +10,10 @@
       <h1>Styles</h1>
 
       <!-- Binding style -->
-      <p :style="{ backgroundColor: bc, color: fc}">style Binding</p>
+      <!-- using the v-bind -->
+      <p v-bind:style="{ backgroundColor: bc, color: fc}">style Binding using the v-bind</p>
+      <!-- using the shorthand (without 'v-bind') -->
+      <p :style="{ backgroundColor: bc, color: fc}">style Binding using the shorthand (without 'v-bind')</p>
 
     </div>
 

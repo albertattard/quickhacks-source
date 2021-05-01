@@ -6,7 +6,6 @@ app.component('nested-component', {
         }
     },
     template:
-    /*html*/
         `
         <h2>Nested Component</h2>
         <ul>

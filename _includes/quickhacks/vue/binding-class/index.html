@@ -11,9 +11,11 @@
       <h1>Classes</h1>
 
       <!-- Binding class -->
-      <p class="greenFont" :class="{largeFont: useLargeFont}">Binding class</p>
-      <p class="greenFont" :class="{smallFont: !useLargeFont}">Binding class</p>
-      <p class="greenFont" :class="[useLargeFont ? 'largeFont' : 'smallFont']">Binding class</p>
+      <!-- using the v-bind -->
+      <p class="greenFont" v-bind:class="{largeFont: useLargeFont}">Binding class using the v-bind</p>
+      <!-- using the shorthand (without 'v-bind') -->
+      <p class="greenFont" :class="{smallFont: !useLargeFont}">Binding class using the shorthand (without 'v-bind')</p>
+      <p class="greenFont" :class="[useLargeFont ? 'largeFont' : 'smallFont']">Binding class using the shorthand (without 'v-bind') and ternary operator</p>
 
     </div>
 
