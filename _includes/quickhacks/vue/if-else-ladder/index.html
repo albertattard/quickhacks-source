@@ -8,18 +8,22 @@
   <body>
     <div id="app">
       <h1>Exam Grade</h1>
+      <p>Exam Mark: {{examMark}}</p>
 
-      <!-- if-else Ladder -->
-      <p v-if="examMark >= 90">A</p>
-      <p v-else-if="examMark >= 75">B</p>
-      <p v-else-if="examMark >= 50">C</p>
-      <p v-else-if="examMark >= 35">D</p>
-      <p v-else>Failed</p>
+      <p>
+        <span>Grade: </span>
+
+        <!-- if-else Ladder -->
+        <span v-if="examMark >= 90">A</span>
+        <span v-else-if="examMark >= 75">B</span>
+        <span v-else-if="examMark >= 50">C</span>
+        <span v-else-if="examMark >= 35">D</span>
+        <span v-else>Failed</span>
+      </p>
 
     </div>
 
     <!-- Import and mount the App -->
     <script src="./main.js"></script>
-    <script>const mountedApp = app.mount('#app')</script>
   </body>
 </html>
