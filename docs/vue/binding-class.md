@@ -2,7 +2,7 @@
 layout: default
 title: Binding class
 parent: Vue
-nav_order: 1
+nav_order: 2.1
 permalink: docs/vue/binding-class/
 ---
 

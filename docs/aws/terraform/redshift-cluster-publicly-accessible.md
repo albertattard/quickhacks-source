@@ -3,7 +3,7 @@ layout: default
 title: Redshift Cluster (Publicly Accessible)
 parent: Terraform
 grand_parent: AWS
-nav_order: 6
+nav_order: 18.2
 permalink: docs/aws/terraform/redshift-cluster-publicly-accessible/
 ---
 

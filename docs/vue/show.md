@@ -2,7 +2,7 @@
 layout: default
 title: show
 parent: Vue
-nav_order: 7
+nav_order: 19
 permalink: docs/vue/show/
 ---
 

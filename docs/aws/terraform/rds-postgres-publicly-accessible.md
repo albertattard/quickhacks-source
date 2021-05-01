@@ -3,7 +3,7 @@ layout: default
 title: RDS Postgres (Publicly Accessible)
 parent: Terraform
 grand_parent: AWS
-nav_order: 5
+nav_order: 18.1
 permalink: docs/aws/terraform/rds-postgres-publicly-accessible/
 ---
 

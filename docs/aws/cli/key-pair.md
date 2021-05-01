@@ -3,7 +3,7 @@ layout: default
 title: Key Pair (SSH Key)
 parent: CLI
 grand_parent: AWS
-nav_order: 1
+nav_order: 11
 permalink: docs/aws/cli/key-pair/
 ---
 

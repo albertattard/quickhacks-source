@@ -2,7 +2,7 @@
 layout: default
 title: Terraform
 parent: AWS
-nav_order: 2
+nav_order: 20
 has_children: true
 permalink: docs/aws/terraform/
 ---

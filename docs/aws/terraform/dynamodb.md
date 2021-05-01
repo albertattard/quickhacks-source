@@ -3,7 +3,7 @@ layout: default
 title: DynamoDB
 parent: Terraform
 grand_parent: AWS
-nav_order: 2
+nav_order: 4
 permalink: docs/aws/terraform/dynamodb/
 ---
 

@@ -3,7 +3,7 @@ layout: default
 title: Logs
 parent: CLI
 grand_parent: AWS
-nav_order: 2
+nav_order: 12
 permalink: docs/aws/cli/logs/
 ---
 

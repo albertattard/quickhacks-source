@@ -2,7 +2,7 @@
 layout: default
 title: Setup environment (SDKMAN)
 parent: Java
-nav_order: 2
+nav_order: 19
 permalink: docs/java/sdkman/
 ---
 

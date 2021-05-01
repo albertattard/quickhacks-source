@@ -2,7 +2,7 @@
 layout: default
 title: PostgreSQL
 parent: Docker
-nav_order: 3
+nav_order: 16
 permalink: docs/docker/postgresql/
 ---
 

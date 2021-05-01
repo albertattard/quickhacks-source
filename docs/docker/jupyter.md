@@ -2,7 +2,7 @@
 layout: default
 title: Jupyter
 parent: Docker
-nav_order: 2
+nav_order: 10
 permalink: docs/docker/jupyter/
 ---
 
