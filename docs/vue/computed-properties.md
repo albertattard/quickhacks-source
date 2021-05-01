@@ -2,11 +2,11 @@
 layout: default
 title: Computed Properties
 parent: Vue
-nav_order: 3
+nav_order: 3.2
 permalink: docs/vue/computed-properties/
 ---
 
-# Binding class
+# Computed Properties
 
 ## References
 
