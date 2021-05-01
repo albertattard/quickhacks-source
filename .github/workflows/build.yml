@@ -3,7 +3,7 @@ on:
     branches:
       - main
 
-name: Master branch CI
+name: Build Site
 
 jobs:
 
@@ -30,3 +30,19 @@ jobs:
           node-version: "12.x"
       - run: npm install
       - run: npm test
+
+  publish:
+    name: Publish to GitHub Pages repo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish to GitHub Pages repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '_site'
+          destination-github-username: 'albertattard'
+          destination-repository-name: 'quickhacks'
+          user-email: albertattard@gmail.com
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+          target-branch: main
