@@ -1,12 +1,12 @@
 ---
 layout: default
-title: style Binding
+title: Binding class
 parent: Vue
-nav_order: 6
-permalink: docs/vue/style-binding/
+nav_order: 1
+permalink: docs/vue/binding-class/
 ---
 
-# style Binding
+# Binding class
 
 ## References
 
@@ -15,11 +15,17 @@ permalink: docs/vue/style-binding/
 ## File: `index.html`
 
 {% highlight html %}
-{% raw_include quickhacks/vue/style-binding/index.html %}
+{% raw_include quickhacks/vue/binding-class/index.html %}
 {% endhighlight %}
 
 ## File: `main.js`
 
 {% highlight js %}
-{% raw_include quickhacks/vue/style-binding/main.js %}
+{% raw_include quickhacks/vue/binding-class/main.js %}
+{% endhighlight %}
+
+## File: `assets/styles.css`
+
+{% highlight css %}
+{% raw_include quickhacks/vue/binding-class/assets/styles.css %}
 {% endhighlight %}

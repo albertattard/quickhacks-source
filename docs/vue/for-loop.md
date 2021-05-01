@@ -2,7 +2,7 @@
 layout: default
 title: for Loop
 parent: Vue
-nav_order: 1
+nav_order: 3
 permalink: docs/vue/for-loop/
 ---
 

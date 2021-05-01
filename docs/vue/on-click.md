@@ -2,7 +2,7 @@
 layout: default
 title: on click
 parent: Vue
-nav_order: 3
+nav_order: 5
 permalink: docs/vue/on-click/
 ---
 

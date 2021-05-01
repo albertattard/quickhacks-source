@@ -6,6 +6,7 @@ url: "https://albertattard.github.io" # the base hostname & protocol for your si
 permalink: pretty
 exclude:
   [
+    ".idea/",
     "bin/",
     "lib/",
     "node_modules/",

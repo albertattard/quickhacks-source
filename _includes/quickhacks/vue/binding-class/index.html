@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Binding class</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Classes</h1>
+
+      <!-- Binding class -->
+      <p class="greenFont" :class="{largeFont: useLargeFont}">Binding class</p>
+      <p class="greenFont" :class="{smallFont: !useLargeFont}">Binding class</p>
+      <p class="greenFont" :class="[useLargeFont ? 'largeFont' : 'smallFont']">Binding class</p>
+
+    </div>
+
+    <!-- Import and mount the App -->
+    <script src="./main.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
+  </body>
+</html>

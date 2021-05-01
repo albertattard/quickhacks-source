@@ -2,7 +2,7 @@
 layout: default
 title: on mouseover (on hover)
 parent: Vue
-nav_order: 4
+nav_order: 6
 permalink: docs/vue/on-mouseover/
 ---
 
