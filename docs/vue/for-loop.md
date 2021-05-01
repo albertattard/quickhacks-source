@@ -8,6 +8,10 @@ permalink: docs/vue/for-loop/
 
 # for Loop
 
+## References
+
+- [https://www.vuemastery.com/courses/intro-to-vue-3/list-rendering-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/list-rendering-vue3)
+
 ## File: `index.html`
 
 {% highlight html %}

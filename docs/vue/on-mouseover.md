@@ -8,6 +8,10 @@ permalink: docs/vue/on-mouseover/
 
 # on mouseover (on hover)
 
+## References
+
+- [https://www.vuemastery.com/courses/intro-to-vue-3/event-handling-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/event-handling-vue3)
+
 ## File: `index.html`
 
 {% highlight html %}

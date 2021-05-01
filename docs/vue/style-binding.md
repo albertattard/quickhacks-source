@@ -8,6 +8,10 @@ permalink: docs/vue/style-binding/
 
 # style Binding
 
+## References
+
+- [https://www.vuemastery.com/courses/intro-to-vue-3/class-and-style-binding-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/class-and-style-binding-vue3)
+
 ## File: `index.html`
 
 {% highlight html %}

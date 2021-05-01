@@ -8,6 +8,10 @@ permalink: docs/vue/show/
 
 # show
 
+## References
+
+- [https://www.vuemastery.com/courses/intro-to-vue-3/conditional-rendering-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/conditional-rendering-vue3)
+
 ## File: `index.html`
 
 {% highlight html %}

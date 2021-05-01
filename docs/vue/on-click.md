@@ -8,6 +8,10 @@ permalink: docs/vue/on-click/
 
 # on click
 
+## References
+
+- [https://www.vuemastery.com/courses/intro-to-vue-3/event-handling-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/event-handling-vue3)
+
 ## File: `index.html`
 
 {% highlight html %}
