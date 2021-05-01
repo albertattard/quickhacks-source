@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>if-else Ladder</title>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Ingredients</h1>
+
+      <!-- for Loop -->
+      <ul>
+        <li v-for="ingredient in ingredients" :key="ingredient.id">{{ ingredient.name }}</li>
+      </ul>
+
+    </div>
+
+    <!-- Import and mount the App -->
+    <script src="./main.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
+  </body>
+</html>

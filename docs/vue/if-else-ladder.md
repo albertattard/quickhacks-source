@@ -2,7 +2,7 @@
 layout: default
 title: if-else Ladder
 parent: Vue
-nav_order: 1
+nav_order: 2
 permalink: docs/vue/if-else-ladder/
 ---
 
