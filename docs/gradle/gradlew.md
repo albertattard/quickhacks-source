@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Gradle Wrapper
-parent: Java
+parent: Gradle
 nav_order: 1
-permalink: docs/java/gradlew/
+permalink: docs/cradle/gradlew/
 ---
 
 # Gradle Wrapper
