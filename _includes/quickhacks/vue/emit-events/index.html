@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Components</title>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.prod.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Counter</h1>
+      <p>Clicks: {{ clicks }}</p>
+
+      <!-- Include the components -->
+      <controls-component
+        @increase-counter="increment"
+        @decrease-counter="decrementIfGreaterThanZero"
+        @reset-counter="clicks = 0"
+      ></controls-component>
+    </div>
+
+    <!-- Import App and components -->
+    <script src="./main.js"></script>
+    <script src="./components/ControlsComponent.js"></script>
+    <!-- Mount the app -->
+    <script>const mountedApp = app.mount('#app')</script>
+  </body>
+</html>
