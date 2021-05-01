@@ -8,11 +8,15 @@
   <body>
     <div id="app">
       <h1>Counter</h1>
-      <p>Clicks: {% raw %}{{ clicks }}{% endraw %}</p>
+      <p>Clicks: {{ clicks }}</p>
 
-      <!-- on:click -->
+      <!-- on click -->
+      <!-- Modify the data directly -->
       <button v-on:click="clicks += 1">Increase</button>
+      <!-- Invoke a method -->
       <button v-on:click="decrementIfGreaterThanZero">Decrease</button>
+      <!-- Use the shorthand '@' -->
+      <button @click="clicks = 0">Reset</button>
 
     </div>
 

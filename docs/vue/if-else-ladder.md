@@ -11,11 +11,11 @@ permalink: docs/vue/if-else-ladder/
 ## File: `index.html`
 
 {% highlight html %}
-{% include quickhacks/vue/if-else-ladder/index.html %}
+{% raw_include quickhacks/vue/if-else-ladder/index.html %}
 {% endhighlight %}
 
 ## File: `main.js`
 
 {% highlight js %}
-{% include quickhacks/vue/if-else-ladder/main.js %}
+{% raw_include quickhacks/vue/if-else-ladder/main.js %}
 {% endhighlight %}

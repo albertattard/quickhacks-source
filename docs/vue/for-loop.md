@@ -11,11 +11,11 @@ permalink: docs/vue/for-loop/
 ## File: `index.html`
 
 {% highlight html %}
-{% include quickhacks/vue/for-loop/index.html %}
+{% raw_include quickhacks/vue/for-loop/index.html %}
 {% endhighlight %}
 
 ## File: `main.js`
 
 {% highlight js %}
-{% include quickhacks/vue/for-loop/main.js %}
+{% raw_include quickhacks/vue/for-loop/main.js %}
 {% endhighlight %}

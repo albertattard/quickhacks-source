@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>for Loop</title>
+    <title>on mouseover (hover)</title>
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
-      <h1>Ingredients</h1>
+      <h1>Months</h1>
+      <p>Month: {{ month }}</p>
 
-      <!-- for Loop -->
       <ul>
-        <li v-for="ingredient in ingredients" :key="ingredient.id">{{ ingredient.name }}</li>
+        <li v-for="student in students" @mouseover="changeMonth(student.month)">{{ student.name }}</li>
       </ul>
 
     </div>
