@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            examMark: 80
+            message: "Vue"
         }
     }
 })

@@ -8,7 +8,7 @@
   <body>
     <div id="app">
       <h1>Exam Grade</h1>
-      <p>Exam Mark: {{examMark}}</p>
+      <p>Exam Mark: {{ examMark }}</p>
 
       <p>
         <span>Grade: </span>
@@ -25,5 +25,6 @@
 
     <!-- Import and mount the App -->
     <script src="./main.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
   </body>
 </html>
