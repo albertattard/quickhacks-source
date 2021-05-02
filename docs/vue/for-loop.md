@@ -1,12 +1,12 @@
 ---
 layout: default
-title: for Loop
+title: For Loop (v-for)
 parent: Vue
 nav_order: 6.1
 permalink: docs/vue/for-loop/
 ---
 
-# for Loop
+# For Loop (`v-for`)
 
 ## References
 

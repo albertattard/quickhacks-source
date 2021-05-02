@@ -1,12 +1,12 @@
 ---
 layout: default
-title: on click
+title: On Click (v-on:click)
 parent: Vue
 nav_order: 15.1
 permalink: docs/vue/on-click/
 ---
 
-# on click
+# On Click (`v-on:click`)
 
 ## References
 

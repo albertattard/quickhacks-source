@@ -1,12 +1,12 @@
 ---
 layout: default
-title: show
+title: Show (v-show)
 parent: Vue
 nav_order: 19
 permalink: docs/vue/show/
 ---
 
-# show
+# Show (`v-show`)
 
 ## References
 

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Binding Attributes
+title: Binding Attributes (v-bind)
 parent: Vue
 nav_order: 2.1
 permalink: docs/vue/binding-attributes/
 ---
 
-# Binding Attributes
+# Binding Attributes (`v-bind`)
 
 ## File: `index.html`
 

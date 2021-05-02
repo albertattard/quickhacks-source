@@ -14,7 +14,7 @@ const app = Vue.createApp({
         },
 
         /* Taking advantage from ES6 syntax */
-        fullNameLastNameUpperCase() {
+        nameAndSurnameUpperCase() {
             return this.name + " " + this.surname.toUpperCase()
         }
     }

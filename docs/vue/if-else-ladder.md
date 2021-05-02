@@ -1,12 +1,12 @@
 ---
 layout: default
-title: if-else Ladder
+title: If-Else Ladder (v-if)
 parent: Vue
 nav_order: 9
 permalink: docs/vue/if-else-ladder/
 ---
 
-# if-else Ladder
+# If-Else Ladder (`v-if`)
 
 ## References
 

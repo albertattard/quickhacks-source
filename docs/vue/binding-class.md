@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Binding class
+title: Binding Class (v-bind)
 parent: Vue
 nav_order: 2.2
 permalink: docs/vue/binding-class/
 ---
 
-# Binding class
+# Binding Class (`v-bind`)
 
 ## References
 

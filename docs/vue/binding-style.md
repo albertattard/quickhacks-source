@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Binding style
+title: Binding Style (v-bind)
 parent: Vue
 nav_order: 2.3
 permalink: docs/vue/binding-style/
 ---
 
-# Binding style
+# Binding Style (`v-bind`)
 
 ## References
 

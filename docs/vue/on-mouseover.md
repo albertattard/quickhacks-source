@@ -1,12 +1,12 @@
 ---
 layout: default
-title: on mouseover (on hover)
+title: On Mouseover (v-on:mouseover)
 parent: Vue
 nav_order: 15.2
 permalink: docs/vue/on-mouseover/
 ---
 
-# on mouseover (on hover)
+# On Mouseover (`v-on:mouseover`)
 
 ## References
 
