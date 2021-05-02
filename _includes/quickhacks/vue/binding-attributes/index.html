@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Binding Attributes</title>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.prod.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Profile</h1>
+      <!-- Interpolation -->
+      <p>Name: <span>{{ fullName }}</span></p>
+
+      <!-- Binding attributes -->
+      <!-- using the v-bind -->
+      <p>My <a v-bind:href="linkedInLink" target="_blank">linkedIn profile</a> (binding the link using the <code>v-bind</code>)</p>
+      <!-- using the shorthand (without 'v-bind') -->
+      <p>My <a :href="gitHubLink" target="_blank">GitHub profile</a> (binding the link using the shorthand, without <code>v-bind</code>)</p>
+
+    </div>
+
+    <!-- Import and mount the App -->
+    <script src="./main.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
+  </body>
+</html>
