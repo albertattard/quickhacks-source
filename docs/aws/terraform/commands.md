@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Terraform Commands
-parent: Terraform
+parent: Terraform (AWS)
 grand_parent: AWS
 nav_order: 3
 permalink: docs/aws/terraform/commands/

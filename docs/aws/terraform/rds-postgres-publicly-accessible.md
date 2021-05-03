@@ -1,7 +1,7 @@
 ---
 layout: default
 title: RDS Postgres (Publicly Accessible)
-parent: Terraform
+parent: Terraform (AWS)
 grand_parent: AWS
 nav_order: 18.1
 permalink: docs/aws/terraform/rds-postgres-publicly-accessible/
@@ -9,13 +9,13 @@ permalink: docs/aws/terraform/rds-postgres-publicly-accessible/
 
 # RDS Postgres (Publicly Accessible)
 
-{% raw_include custom/example_not_working.html details="The database is created but not publicly accessible as expected." %}
+{% include custom/example_not_working.html details="The database is created but not publicly accessible as expected." %}
 
 ---
 
 ## Terraform
 
-{% raw_include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}
+{% include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}
 
 ### File: `terraform.tf`
 
@@ -46,7 +46,7 @@ The bucket `quickhacks-terraform` needs to be created beforehand. Refer to
 
 ## Connect to the database
 
-{% raw_include custom/pending.html details="Will add this once I figure out the issue" %}
+{% include custom/pending.html details="Will add this once I figure out the issue" %}
 
 ```console
 $ 

@@ -24,7 +24,7 @@ and more. SDKMAN also takes care of setting environment variables for you. Insta
    $ sdk version
    SDKMAN SDKMAN 5.11.0+644
    ```
-   
+
    Update SDKMAN if an older version is found
 
    ```console

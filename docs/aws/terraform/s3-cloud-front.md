@@ -1,7 +1,7 @@
 ---
 layout: default
 title: S3 & Cloud Front
-parent: Terraform
+parent: Terraform (AWS)
 grand_parent: AWS
 nav_order: 19
 permalink: docs/aws/terraform/s3-cloud-front/
@@ -13,7 +13,7 @@ permalink: docs/aws/terraform/s3-cloud-front/
 
 ## Terraform
 
-{% raw_include custom/note.html details="Deployment may take several minute to create all required AWS resources. Don't be
+{% include custom/note.html details="Deployment may take several minute to create all required AWS resources. Don't be
 alarmed if a simple deployment of few files take several minutes to complete." %}
 
 ### File: `terraform.tf`

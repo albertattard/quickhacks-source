@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CLI
+title: CLI (AWS)
 parent: AWS
 nav_order: 3
 has_children: true

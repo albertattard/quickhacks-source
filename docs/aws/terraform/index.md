@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Terraform
+title: Terraform (AWS)
 parent: AWS
 nav_order: 20
 has_children: true

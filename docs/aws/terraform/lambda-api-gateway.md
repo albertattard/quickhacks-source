@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lambda (API Gateway)
-parent: Terraform
+parent: Terraform (AWS)
 grand_parent: AWS
 nav_order: 12
 permalink: docs/aws/terraform/lambda-api-gateway/

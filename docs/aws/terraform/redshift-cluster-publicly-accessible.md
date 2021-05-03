@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Redshift Cluster (Publicly Accessible)
-parent: Terraform
+parent: Terraform (AWS)
 grand_parent: AWS
 nav_order: 18.2
 permalink: docs/aws/terraform/redshift-cluster-publicly-accessible/
@@ -13,7 +13,7 @@ permalink: docs/aws/terraform/redshift-cluster-publicly-accessible/
 
 ## Terraform
 
-{% raw_include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}
+{% include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}
 
 ### File: `terraform.tf`
 
@@ -50,7 +50,7 @@ Ubuntu image and can be used to connect to the Redshift cluster.
 {% highlight Dockerfile %}
 {% raw_include quickhacks/aws/terraform/redshift-cluster-publicly-accessible/Dockerfile %}
 {% endhighlight %}
-  
+
 1. Build the docker image
 
    ```console
