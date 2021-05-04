@@ -47,3 +47,24 @@ $ ./gradlew tiTree build
 BUILD SUCCESSFUL in 768ms
 1 actionable task: 1 executed
 ```
+
+## Versions
+
+1. Gradle
+
+   ```console
+   $ ./gradlew --version
+
+   ------------------------------------------------------------
+   Gradle 7.0
+   ------------------------------------------------------------
+
+   Build time:   2021-04-09 22:27:31 UTC
+   Revision:     d5661e3f0e07a8caff705f1badf79fb5df8022c4
+
+   Kotlin:       1.4.31
+   Groovy:       3.0.7
+   Ant:          Apache Ant(TM) version 1.10.9 compiled on September 27 2020
+   JVM:          16 (AdoptOpenJDK 16+36)
+   OS:           Mac OS X 10.16 x86_64
+   ```

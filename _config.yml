@@ -39,7 +39,7 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Quickhacks on GitHub":
-    - "https://github.com/albertattard/quickhacks"
+    - "https://github.com/albertattard/quickhacks-source"
 
 # Footer content appears at the bottom of every page's main content
 footer_content: 'Copyright &copy; Albert Attard. Distributed by an <a href="https://opensource.org/licenses/Apache-2.0">Apache License 2.0.</a>'

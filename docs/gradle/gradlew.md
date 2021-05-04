@@ -8,6 +8,10 @@ permalink: docs/gradle/gradlew/
 
 # Gradle Wrapper
 
+## References
+
+- [https://www.youtube.com/watch?v=zAR3Ahr8VnA](https://www.youtube.com/watch?v=zAR3Ahr8VnA)
+
 ## Blank Projects
 
 A [blank project containing just the gradle wrapper](https://github.com/albertattard/blank-gradle-project).
