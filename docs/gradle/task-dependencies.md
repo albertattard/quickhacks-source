@@ -55,9 +55,7 @@ BUILD SUCCESSFUL in 768ms
    ```console
    $ ./gradlew --version
 
-   ------------------------------------------------------------
    Gradle 7.0
-   ------------------------------------------------------------
 
    Build time:   2021-04-09 22:27:31 UTC
    Revision:     d5661e3f0e07a8caff705f1badf79fb5df8022c4
