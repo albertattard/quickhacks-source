@@ -3,7 +3,7 @@ layout: default
 title: Gradle Wrapper
 parent: Gradle
 nav_order: 7
-permalink: docs/cradle/gradlew/
+permalink: docs/gradle/gradlew/
 ---
 
 # Gradle Wrapper
