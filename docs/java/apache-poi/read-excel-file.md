@@ -49,12 +49,12 @@ BUILD SUCCESSFUL in 1s
 
 1. Java
 
-    ```console
-    $ java --version
+   ```console
+   $ java --version
    openjdk 16 2021-03-16
    OpenJDK Runtime Environment AdoptOpenJDK (build 16+36)
    OpenJDK 64-Bit Server VM AdoptOpenJDK (build 16+36, mixed mode, sharing)
-    ```
+   ```
 
 1. Gradle
 
