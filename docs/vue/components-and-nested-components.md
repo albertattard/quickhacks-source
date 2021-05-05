@@ -10,7 +10,7 @@ permalink: docs/vue/components-and-nested-components/
 
 ## References
 
-- [https://www.vuemastery.com/courses/intro-to-vue-3/components-and-props-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/components-and-props-vue3)
+- [https://www.vuemastery.com/courses/intro-to-vue-3/components-and-props-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/components-and-props-vue3){:target="_blank"}
 
 ## File: `index.html`
 

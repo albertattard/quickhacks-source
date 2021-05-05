@@ -8,4 +8,4 @@ permalink: docs/vue/
 
 # Vue
 
-A set of Vue quickhacks.
+A set of [Vue](https://vuejs.org/){:target="_blank"} quickhacks.

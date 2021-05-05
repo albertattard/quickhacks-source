@@ -10,7 +10,7 @@ permalink: docs/vue/computed-properties/
 
 ## References
 
-- [https://www.vuemastery.com/courses/intro-to-vue-3/computed-properties-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/computed-properties-vue3)
+- [https://www.vuemastery.com/courses/intro-to-vue-3/computed-properties-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/computed-properties-vue3){:target="_blank"}
 
 ## File: `index.html`
 

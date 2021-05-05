@@ -10,8 +10,8 @@ permalink: docs/vue/forms-and-v-model/
 
 ## References
 
-- [https://www.vuemastery.com/courses/intro-to-vue-3/forms-and-v-model-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/forms-and-v-model-vue3)
-- [https://v3.vuejs.org/guide/component-custom-events.html#handling-v-model-modifiers](https://v3.vuejs.org/guide/component-custom-events.html#handling-v-model-modifiers)
+- [https://www.vuemastery.com/courses/intro-to-vue-3/forms-and-v-model-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/forms-and-v-model-vue3){:target="_blank"}
+- [https://v3.vuejs.org/guide/component-custom-events.html#handling-v-model-modifiers](https://v3.vuejs.org/guide/component-custom-events.html#handling-v-model-modifiers){:target="_blank"}
 
 ## File: `index.html`
 

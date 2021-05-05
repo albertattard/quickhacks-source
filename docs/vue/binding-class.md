@@ -10,7 +10,7 @@ permalink: docs/vue/binding-class/
 
 ## References
 
-- [https://www.vuemastery.com/courses/intro-to-vue-3/class-and-style-binding-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/class-and-style-binding-vue3)
+- [https://www.vuemastery.com/courses/intro-to-vue-3/class-and-style-binding-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/class-and-style-binding-vue3){:target="_blank"}
 
 ## File: `index.html`
 

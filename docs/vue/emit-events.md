@@ -10,7 +10,7 @@ permalink: docs/vue/emit-events/
 
 ## References
 
-- [https://www.vuemastery.com/courses/intro-to-vue-3/communicating-events-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/communicating-events-vue3)
+- [https://www.vuemastery.com/courses/intro-to-vue-3/communicating-events-vue3](https://www.vuemastery.com/courses/intro-to-vue-3/communicating-events-vue3){:target="_blank"}
 
 ## File: `index.html`
 
