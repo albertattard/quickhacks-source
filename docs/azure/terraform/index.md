@@ -9,4 +9,4 @@ permalink: docs/azure/terraform/
 
 # Terraform
 
-A set of [Azure and Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest) quickhacks.
+A set of [Azure and Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest){:target="_blank"} quickhacks.

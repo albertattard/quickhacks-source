@@ -9,4 +9,4 @@ permalink: docs/aws/cli/
 
 # CLI
 
-A set of [AWS CLI](https://aws.amazon.com/cli/) quickhacks.
+A set of [AWS CLI](https://aws.amazon.com/cli/){:target="_blank"} quickhacks.

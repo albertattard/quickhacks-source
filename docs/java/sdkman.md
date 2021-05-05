@@ -8,8 +8,8 @@ permalink: docs/java/sdkman/
 
 # Setup environment (SDKMAN)
 
-[SDKMAN](https://sdkman.io/) is a command line tool that allows us to install different versions of Java, Gradle, Maven
-and more. SDKMAN also takes care of setting environment variables for you. Installing SDKMAN.
+[SDKMAN](https://sdkman.io/){:target="_blank"} is a command line tool that allows us to install different versions of
+Java, Gradle, Maven and more. SDKMAN also takes care of setting environment variables for you. Installing SDKMAN.
 
 1. Install
 
@@ -37,7 +37,7 @@ and more. SDKMAN also takes care of setting environment variables for you. Insta
    $ sdk list java
    ```
 
-   This will print all versions available to SDKMAN from different [vendors](https://sdkman.io/jdks).
+   This will print all versions available to SDKMAN from different [vendors](https://sdkman.io/jdks){:target="_blank"}.
 
    ```console
    ================================================================================
@@ -79,10 +79,10 @@ and more. SDKMAN also takes care of setting environment variables for you. Insta
    OpenJDK comes in two flavours:
 
    1. **HotSpot** (`...x.hs-adpt`) is the VM from the OpenJDK community. It is the most widely used VM today and is used
-      in Oracle's JDK ([reference](https://openjdk.java.net/groups/hotspot/)).
+      in Oracle's JDK ([reference](https://openjdk.java.net/groups/hotspot/){:target="_blank"}).
    1. **Eclipse OpenJ9** (`...x.j9-adpt`) is the VM from the Eclipse community. It is an enterprise-grade VM designed
-      for low memory footprint and fast start-up and is used in IBM's JDK ([reference](https://www.eclipse.org/openj9/))
-      .
+      for low memory footprint and fast start-up and is used in IBM's
+      JDK ([reference](https://www.eclipse.org/openj9/){:target="_blank"}).
 
 1. Change the default Java
 
@@ -153,4 +153,4 @@ and more. SDKMAN also takes care of setting environment variables for you. Insta
    OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.10+9, mixed mode)
    ```
 
-For more details, please refer to: [https://sdkman.io/install](https://sdkman.io/install)
+For more details, please refer to: [https://sdkman.io/install](https://sdkman.io/install){:target="_blank"}

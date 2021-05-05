@@ -9,4 +9,4 @@ permalink: docs/aws/terraform/
 
 # Terraform
 
-A set of [AWS and Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) quickhacks.
+A set of [AWS and Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs){:target="_blank"} quickhacks.

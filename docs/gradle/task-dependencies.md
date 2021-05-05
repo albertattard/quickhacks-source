@@ -10,8 +10,8 @@ permalink: docs/gradle/task-dependencies/
 
 ## References
 
-- [https://plugins.gradle.org/plugin/org.barfuin.gradle.taskinfo](https://plugins.gradle.org/plugin/org.barfuin.gradle.taskinfo)
-- [https://youtu.be/Vxfk7OsEekA?t=105](https://youtu.be/Vxfk7OsEekA?t=105)
+- [https://plugins.gradle.org/plugin/org.barfuin.gradle.taskinfo](https://plugins.gradle.org/plugin/org.barfuin.gradle.taskinfo){:target="_blank"}
+- [https://youtu.be/Vxfk7OsEekA?t=105](https://youtu.be/Vxfk7OsEekA?t=105){:target="_blank"}
 
 ## File: `build.gradle`
 

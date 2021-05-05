@@ -13,8 +13,8 @@ permalink: docs/aws/cli/key-pair/
 
 ## Create Key Pair
 
-The following make use of [jq](https://stedolan.github.io/jq/), which can be installed using 
-[brew](https://formulae.brew.sh/formula/jq).
+The following make use of [jq](https://stedolan.github.io/jq/){:target="_blank"}, which can be installed using 
+[brew](https://formulae.brew.sh/formula/jq){:target="_blank"}.
 
 ```console
 $ AWS_PROFILE="quickhacks" aws ec2 create-key-pair --key-name "Quickhacks SSH Key" --region eu-central-1 | jq -r ".KeyMaterial" > ./quickhacks.pem
@@ -45,4 +45,11 @@ $ rm quickhacks.pem
    ```console
    $ aws --version
    aws-cli/2.1.30 Python/3.9.2 Darwin/20.3.0 source/x86_64 prompt/off
+   ```
+
+1. jq
+
+   ```console
+   $ jq --version
+   jq-1.6
    ```

@@ -88,3 +88,12 @@ permalink: docs/aws/terraform/commands/
    ```console
    $ AWS_PROFILE="quickhacks" terraform -chdir=terraform destroy
    ```
+
+## Versions
+
+1. Terraform
+
+    ```console
+    $ terraform --version
+    Terraform v0.15.0
+    ```

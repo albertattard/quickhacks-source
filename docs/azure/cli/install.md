@@ -14,3 +14,13 @@ permalink: docs/azure/cli/install-azure-cli/
 ```console
 $ brew update && brew install azure-cli
 ```
+
+## Versions
+
+1. brew
+
+   ```console
+   $ brew --version
+   Homebrew 3.1.5
+   Homebrew/homebrew-core (git revision 6fe761d2af; last commit 2021-05-03)
+   ```

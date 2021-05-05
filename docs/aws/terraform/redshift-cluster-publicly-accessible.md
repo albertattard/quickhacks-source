@@ -79,3 +79,17 @@ Ubuntu image and can be used to connect to the Redshift cluster.
     $ terraform --version
     Terraform v0.15.0
     ```
+
+1. Docker
+
+    ```console
+    $ docker --version
+    Docker version 20.10.5, build 55c4c88
+    ```
+
+1. jq
+
+   ```console
+   $ jq --version
+   jq-1.6
+   ```

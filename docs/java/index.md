@@ -8,4 +8,4 @@ permalink: docs/java/
 
 # Java
 
-A set of Java quickhacks.
+A set of [Java](https://www.oracle.com/java/technologies/){:target="_blank"} quickhacks.

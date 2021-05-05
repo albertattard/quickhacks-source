@@ -74,3 +74,10 @@ $ ssh -i "quickhacks.pem" ec2-user@$(AWS_PROFILE="quickhacks" terraform output -
    $ ssh -V
    OpenSSH_8.1p1, LibreSSL 2.7.3
    ```
+
+1. jq
+
+   ```console
+   $ jq --version
+   jq-1.6
+   ```

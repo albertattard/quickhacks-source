@@ -7,3 +7,5 @@ permalink: docs/git/
 ---
 
 # Git
+
+A set of [Git](https://git-scm.com/){:target="_blank"} quickhacks.

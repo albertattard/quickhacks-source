@@ -8,4 +8,5 @@ permalink: docs/gradle/
 
 # Gradle
 
-A set of Gradle and Gradle Wrapper quickhacks.
+A set of [Gradle](https://gradle.org/){:target="_blank"}
+and [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html){:target="_blank"} quickhacks.

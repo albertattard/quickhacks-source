@@ -10,8 +10,8 @@ permalink: docs/git/change-last-commit-message/
 
 ## References
 
-- [https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--mltmsggt](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--mltmsggt)
-- [https://linuxize.com/post/change-git-commit-message/](https://linuxize.com/post/change-git-commit-message/)
+- [https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--mltmsggt](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--mltmsggt){:target="_blank"}
+- [https://linuxize.com/post/change-git-commit-message/](https://linuxize.com/post/change-git-commit-message/){:target="_blank"}
 
 ## Git Command
 
