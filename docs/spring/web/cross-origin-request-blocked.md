@@ -22,6 +22,12 @@ still carries out its task and make the changes requested. Only the response is 
 {% raw_include quickhacks/spring/web/cross-origin-request-blocked/src/main/java/quickhacks/QuickhackController.java %}
 {% endhighlight %}
 
+## File: `build.gradle`
+
+{% highlight gradle %}
+{% raw_include quickhacks/spring/web/cross-origin-request-blocked/build.gradle %}
+{% endhighlight %}
+
 ## Versions
 
 - Java

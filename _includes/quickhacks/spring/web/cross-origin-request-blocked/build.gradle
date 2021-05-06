@@ -4,9 +4,10 @@ plugins {
     id 'java'
 }
 
-group = 'quickhacks'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+java {
+    sourceCompatibility = JavaVersion.VERSION_16
+    targetCompatibility = JavaVersion.VERSION_16
+}
 
 repositories {
     mavenCentral()
