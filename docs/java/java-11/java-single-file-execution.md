@@ -3,7 +3,7 @@ layout: default
 title: Java single file execution
 parent: Java 11
 grand_parent: Java
-nav_order: 18
+nav_order: 10
 permalink: docs/java/java-11/java-single-file-execution/
 ---
 
