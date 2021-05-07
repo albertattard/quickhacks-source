@@ -1,0 +1,21 @@
+plugins {
+    id "java"
+    id "application"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+application {
+    mainClass = "quickhack.Main"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jsoup:jsoup:1.13.1"
+}
