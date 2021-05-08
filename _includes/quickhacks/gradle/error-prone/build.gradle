@@ -1,0 +1,28 @@
+plugins {
+    id "java"
+    id "net.ltgt.errorprone" version "2.0.1"
+    id "org.barfuin.gradle.taskinfo" version "1.0.5"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(16)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def errorproneVersion = "2.6.0"
+    def nullawayVersion = "0.9.1"
+    errorprone "com.google.errorprone:error_prone_core:${errorproneVersion}"
+    errorprone("com.uber.nullaway:nullaway:$nullawayVersion")
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.errorprone.enable("RemoveUnusedImports")
+    options.errorprone.check("NullAway", net.ltgt.gradle.errorprone.CheckSeverity.ERROR)
+    options.errorprone.option("NullAway:AnnotatedPackages", "quickhack")
+}
