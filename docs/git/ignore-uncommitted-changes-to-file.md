@@ -8,11 +8,27 @@ permalink: docs/git/ignore-uncommitted-changes-to-file/
 
 # Ignore Uncommitted Changes to File
 
-## Git Command
+## Git Commands
 
-```console
-$ git checkout <file-path>
-```
+- Save all changes (tracked or not) for later use and sets your working area to your last commit
+
+  ```console
+  $ git stash
+  ```
+
+- Replace a given file with the last committed copy
+
+  ```console
+  $ git checkout <file-path>
+  ```
+
+- Permanently discard all local changes and move back to the last commit
+
+  ```console
+  $ git reset --hard HEAD
+  ```
+
+  Note that untracked files are not effected by this command, and you need to delete them manually
 
 ## Versions
 
