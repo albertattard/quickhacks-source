@@ -8,6 +8,11 @@ permalink: docs/vue/jest-unit-testing/
 
 # Jest Unit Testing
 
+A simple application that has a counter that can be incremented and decremented as required. The counter cannot be
+negative and cannot be decremented further once it reaches `0`.
+
+![Counter]({{ "/assets/images/vue/jest-unit-testing.png" | absolute_url }})
+
 ## File: `tests/unit/counter.spec.ts`
 
 {% highlight typescript %}
@@ -19,3 +24,25 @@ permalink: docs/vue/jest-unit-testing/
 {% highlight vue %}
 {% raw_include quickhacks/vue/jest-unit-testing/src/components/Counter.vue %}
 {% endhighlight %}
+
+## File: `package.json`
+
+{% highlight json %}
+{% raw_include quickhacks/vue/jest-unit-testing/package.json %}
+{% endhighlight %}
+
+## Version
+
+- npm
+
+  ```console
+  $ npm --version
+  7.11.2
+  ```
+
+- vue-cli
+
+  ```console
+  $ vue --version
+  @vue/cli 4.5.12
+  ```

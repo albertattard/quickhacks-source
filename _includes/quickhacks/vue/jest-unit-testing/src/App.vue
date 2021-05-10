@@ -1,4 +1,5 @@
 <template>
+  <img src="assets/logo.png" />
   <Counter caption="A simple counter using Vue.js + TypeScript" />
 </template>
 
