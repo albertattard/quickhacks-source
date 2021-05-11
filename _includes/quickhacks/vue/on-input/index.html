@@ -7,12 +7,19 @@
   </head>
   <body>
     <div id="app">
-      <h1>Name {{ name }}</h1>
+      <h1>Name {{ fullName }}</h1>
 
       <!-- on input -->
-      <!-- Uses the event created by the browser to get what the user typed -->
-      <input type="text" v-on:input="setName"/>
-
+      <div>
+        <label for="name">Name: </label>
+        <!-- Uses the event created by the browser to get what the user typed -->
+        <input id="name" type="text" v-on:input="setName"/>
+      </div>
+      <div>
+        <label for="surname">Surname: </label>
+        <!-- Passes the event created by the browser explicitly -->
+        <input id="surname" type="text" v-on:input="setSurname($event)"/>
+      </div>
     </div>
 
     <!-- Import and mount the App -->

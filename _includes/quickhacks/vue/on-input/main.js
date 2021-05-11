@@ -1,13 +1,22 @@
 const app = Vue.createApp({
     data() {
         return {
-            name: ''
+            name: "",
+            surname: "",
+            fullName: "",
         }
     },
     methods: {
-        /* Uses the event created by the browser to get what the user typed */
         setName(event) {
             this.name = event.target.value
-        }
+            this.updateFullName();
+        },
+        setSurname(event) {
+            this.surname = event.target.value
+            this.updateFullName();
+        },
+        updateFullName() {
+            this.fullName = this.name + " " + this.surname.toUpperCase()
+        },
     }
 })
