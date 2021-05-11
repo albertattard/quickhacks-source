@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>on input</title>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.prod.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Name {{ name }}</h1>
+
+      <!-- on input -->
+      <!-- Uses the event created by the browser to get what the user typed -->
+      <input type="text" v-on:input="setName"/>
+
+    </div>
+
+    <!-- Import and mount the App -->
+    <script src="./main.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
+  </body>
+</html>

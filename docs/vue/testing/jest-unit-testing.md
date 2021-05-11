@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Jest Unit Testing
-parent: Vue
+parent: Testing (Vue)
+grand_parent: Vue
 nav_order: 10
-permalink: docs/vue/jest-unit-testing/
+permalink: docs/vue/testing/jest-unit-testing/
 ---
 
 # Jest Unit Testing
@@ -11,24 +12,24 @@ permalink: docs/vue/jest-unit-testing/
 A simple application that has a counter that can be incremented and decremented as required. The counter cannot be
 negative and cannot be decremented further once it reaches `0`.
 
-![Counter]({{ "/assets/images/vue/jest-unit-testing.png" | absolute_url }})
+![Counter]({{ "/assets/images/vue/testing/jest-unit-testing.png" | absolute_url }})
 
 ## File: `tests/unit/counter.spec.ts`
 
 {% highlight typescript %}
-{% raw_include quickhacks/vue/jest-unit-testing/tests/unit/counter.spec.ts %}
+{% raw_include quickhacks/vue/testing/jest-unit-testing/tests/unit/counter.spec.ts %}
 {% endhighlight %}
 
 ## File: `src/components/Counter.vue`
 
 {% highlight vue %}
-{% raw_include quickhacks/vue/jest-unit-testing/src/components/Counter.vue %}
+{% raw_include quickhacks/vue/testing/jest-unit-testing/src/components/Counter.vue %}
 {% endhighlight %}
 
 ## File: `package.json`
 
 {% highlight json %}
-{% raw_include quickhacks/vue/jest-unit-testing/package.json %}
+{% raw_include quickhacks/vue/testing/jest-unit-testing/package.json %}
 {% endhighlight %}
 
 ## Version
