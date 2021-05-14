@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Nest-Based Access Control
+title: "JEP 181: Nest-Based Access Control"
 parent: Java 11
 grand_parent: Java
-nav_order: 14
-permalink: docs/java/java-11/nest-based-access-control/
+nav_order: 10.1
+permalink: docs/java/java-11/jep-181-nest-based-access-control/
 ---
 
-# Nest-Based Access Control
+# JEP 181: Nest-Based Access Control
 
 Java 11 introduced Nest-Based Access Control ([JEP-181](https://openjdk.java.net/jeps/181){:target="_blank"}), an
 access-control context that aligns with the existing notion of nested types in the Java programming language. Nests
@@ -20,7 +20,7 @@ methods.
 ## File: `src/main/java/quickhack/Main.java`
 
 {% highlight java %}
-{% raw_include quickhacks/java/java-11/nest-based-access-control/src/main/java/quickhack/Main.java %}
+{% raw_include quickhacks/java/java-11/jep-181-nest-based-access-control/src/main/java/quickhack/Main.java %}
 {% endhighlight %}
 
 ## Compile and run with Java 8

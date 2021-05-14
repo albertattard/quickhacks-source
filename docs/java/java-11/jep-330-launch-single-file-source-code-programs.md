@@ -3,7 +3,7 @@ layout: default
 title: "JEP 330: Launch Single-File Source-Code Programs"
 parent: Java 11
 grand_parent: Java
-nav_order: 10
+nav_order: 10.330
 permalink: docs/java/java-11/jep-330-launch-single-file-source-code-programs/
 ---
 

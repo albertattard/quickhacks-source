@@ -1,13 +1,13 @@
 ---
 layout: default
-title: HTTP Client
+title: "JEP 321: HTTP Client"
 parent: Java 11
 grand_parent: Java
-nav_order: 8
-permalink: docs/java/java-11/http-client/
+nav_order: 10.321
+permalink: docs/java/java-11/jep-321-http-client/
 ---
 
-# HTTP Client
+# JEP 321: HTTP Client
 
 Java 11 introduced HTTP Client ([JEP-321](https://openjdk.java.net/jeps/321){:target="_blank"}), which Standardize
 the [incubated](https://openjdk.java.net/jeps/11) HTTP Client API introduced
@@ -18,7 +18,7 @@ in [JDK 9, via JEP 110](https://openjdk.java.net/jeps/110), and updated in JDK 1
 ## File: `src/main/java/quickhack/Main.java`
 
 {% highlight java %}
-{% raw_include quickhacks/java/java-11/http-client/src/main/java/quickhack/Main.java %}
+{% raw_include quickhacks/java/java-11/jep-321-http-client/src/main/java/quickhack/Main.java %}
 {% endhighlight %}
 
 ## Run
