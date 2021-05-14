@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Java single file execution
+title: "JEP 330: Launch Single-File Source-Code Programs"
 parent: Java 11
 grand_parent: Java
 nav_order: 10
-permalink: docs/java/java-11/java-single-file-execution/
+permalink: docs/java/java-11/jep-330-launch-single-file-source-code-programs/
 ---
 
-# Java single file execution
+# JEP 330: Launch Single-File Source-Code Programs
 
 Java 11 introduced Java Single File Execution ([JEP-330](https://openjdk.java.net/jeps/330){:target="_blank"}) which
 enhanced the java launcher to run a program supplied as a single file of Java source code, including usage from within a
@@ -18,7 +18,9 @@ techniques.
 
 ## File: `hello`
 
-{% highlight java %} {% raw_include quickhacks/java/java-11/java-single-file-execution/hello %} {% endhighlight %}
+{% highlight java %} 
+{% raw_include quickhacks/java/java-11/jep-330-launch-single-file-source-code-programs/hello %}
+{% endhighlight %}
 
 ## Run the script
 
