@@ -2,7 +2,7 @@
 layout: default
 title: Tricorder
 parent: Unsorted
-nav_order: 13
+nav_order: 20
 permalink: docs/unsorted/tricorder/
 ---
 

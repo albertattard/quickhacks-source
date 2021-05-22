@@ -2,7 +2,7 @@
 layout: default
 title: Structurizr DSL
 parent: Unsorted
-nav_order: 13
+nav_order: 19.2
 permalink: docs/unsorted/Structurizr DSL/
 ---
 

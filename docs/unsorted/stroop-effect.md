@@ -2,7 +2,7 @@
 layout: default
 title: Stroop effect
 parent: Unsorted
-nav_order: 19
+nav_order: 19.1
 permalink: docs/unsorted/stroop-effect/
 ---
 
