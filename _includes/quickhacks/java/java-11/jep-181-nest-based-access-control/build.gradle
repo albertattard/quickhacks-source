@@ -4,6 +4,6 @@ plugins {
 }
 
 application {
-    applicationName "Nest-Based Access Control"
+    applicationName "JEP 181: Nest-Based Access Control"
     mainClass = "quickhack.Main"
 }

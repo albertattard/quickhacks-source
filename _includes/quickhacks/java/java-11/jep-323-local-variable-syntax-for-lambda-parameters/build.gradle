@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    applicationName "JEP 323: Local-Variable Syntax for Lambda Parameters"
+    mainClass = "quickhack.Main"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(10)
+    }
+}
