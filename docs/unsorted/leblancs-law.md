@@ -14,5 +14,5 @@ permalink: docs/unsorted/leblancs-law/
 
 ## LeBlanc's Law
 
-"_LeBlanc's Law states: "Later equals never" is used in the context of software development, but may be applied more
-broadly to other areas. The law is attributed to Dave LeBlanc_"
+> _LeBlanc's Law states: "Later equals never" is used in the context of software development, but may be applied more
+broadly to other areas. The law is attributed to Dave LeBlanc_
