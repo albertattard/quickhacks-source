@@ -1,0 +1,49 @@
+plugins {
+    id("io.micronaut.application") version "1.5.0"
+    id("com.microsoft.azure.azurefunctions") version "1.5.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+micronaut {
+    runtime("azure_function")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("quickhacks.*")
+    }
+}
+
+application {
+    mainClass.set("quickhacks.Application")
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+azurefunctions {
+    resourceGroup = "java-functions-group"
+    appName = "quickhack"
+    pricingTier = "Consumption"
+    region = "frankfurt"
+    runtime {
+        os = "linux"
+    }
+    localDebug = "transport=dt_socket,server=y,suspend=n,address=5005"
+}
+
+dependencies {
+    /* Micronaut */
+    implementation("io.micronaut:micronaut-runtime")
+    implementation("javax.annotation:javax.annotation-api")
+    implementation("io.micronaut:micronaut-validation")
+    testImplementation("io.micronaut:micronaut-http-client")
+
+    /* Logging */
+    runtimeOnly("ch.qos.logback:logback-classic")
+}
