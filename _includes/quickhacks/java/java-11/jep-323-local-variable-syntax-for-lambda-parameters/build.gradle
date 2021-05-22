@@ -10,6 +10,6 @@ application {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(10)
+        languageVersion = JavaLanguageVersion.of(11)
     }
 }
