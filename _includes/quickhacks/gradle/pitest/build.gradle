@@ -1,0 +1,36 @@
+plugins {
+    id "java"
+    id "info.solidsoft.pitest" version "1.5.1"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(16)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter:5.8.0-M1"
+    testRuntimeOnly "org.pitest:pitest-junit5-plugin:0.14"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+pitest {
+    pitestVersion = "1.6.6"
+    testPlugin = "junit5"
+    targetClasses = ["quickhacks.*"]
+    timestampedReports = false
+    mutationThreshold = 80
+    coverageThreshold = 80
+}
+
+check {
+    dependsOn "pitest"
+}
