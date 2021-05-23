@@ -1,4 +1,4 @@
-package quickhack;
+package quickhacks;
 
 import java.time.LocalDateTime;
 

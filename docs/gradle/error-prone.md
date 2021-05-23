@@ -21,12 +21,12 @@ permalink: docs/gradle/error-prone/
 {% raw_include quickhacks/gradle/error-prone/build.gradle %}
 {% endhighlight %}
 
-## File: `src/main/java/quickhack/Examples.java`
+## File: `src/main/java/quickhacks/Examples.java`
 
 {% include custom/dose_not_compile.html details="The following example will fail to compile due to the error prone checks" %}
 
 {% highlight java %}
-{% raw_include quickhacks/gradle/error-prone/src/main/java/quickhack/Examples.java %}
+{% raw_include quickhacks/gradle/error-prone/src/main/java/quickhacks/Examples.java %}
 {% endhighlight %}
 
 ## Run Error Prone checks
@@ -37,21 +37,21 @@ The build will fail as one of the failed checks has error level.
 $ ./gradlew compileJava
 
 > Task :compileJava
-/quickhacks/gradle/error-prone/src/main/java/quickhack/Examples.java:8: warning: [UnusedVariable] The local variable 'a' is never read.
+/quickhacks/gradle/error-prone/src/main/java/quickhacks/Examples.java:8: warning: [UnusedVariable] The local variable 'a' is never read.
         int a = 7;
             ^
     (see https://errorprone.info/bugpattern/UnusedVariable)
   Did you mean to remove this line?
-/quickhacks/gradle/error-prone/src/main/java/quickhack/Examples.java:3: Note: [RemoveUnusedImports] Unused imports: java.time.LocalDateTime
+/quickhacks/gradle/error-prone/src/main/java/quickhacks/Examples.java:3: Note: [RemoveUnusedImports] Unused imports: java.time.LocalDateTime
 import java.time.LocalDateTime;
 ^
     (see https://errorprone.info/bugpattern/RemoveUnusedImports)
   Did you mean to remove this line?
-/quickhacks/gradle/error-prone/src/main/java/quickhack/Examples.java:17: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+/quickhacks/gradle/error-prone/src/main/java/quickhacks/Examples.java:17: error: [NullAway] returning @Nullable expression from method with @NonNull return type
         return null;
         ^
     (see http://t.uber.com/nullaway )
-/quickhacks/gradle/error-prone/src/main/java/quickhack/Examples.java:24: warning: [AnnotateFormatMethod] This method passes a pair of parameters through to String.format, but the enclosing method wasn't annotated @FormatMethod. Doing so gives compile-time rather than run-time protection against malformed format strings.
+/quickhacks/gradle/error-prone/src/main/java/quickhacks/Examples.java:24: warning: [AnnotateFormatMethod] This method passes a pair of parameters through to String.format, but the enclosing method wasn't annotated @FormatMethod. Doing so gives compile-time rather than run-time protection against malformed format strings.
     private static void logf(final String pattern, final Object... params) {
                         ^
     (see https://errorprone.info/bugpattern/AnnotateFormatMethod)
