@@ -1,0 +1,24 @@
+plugins {
+    id "java"
+    id "org.owasp.dependencycheck" version "6.1.6"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "ch.qos.logback:logback-classic:1.1.0" /* Using an outdated dependency on purpose */
+}
+
+dependencyCheck {
+    autoUpdate = false
+    cveValidForHours = 1
+    format = 'ALL'
+    failBuildOnCVSS = 7 /* Fail for high security threats or above */
+    outputDirectory = "build/reports/dependency-check"
+}
+
+check {
+    dependsOn "dependencyCheckAnalyze"
+}
