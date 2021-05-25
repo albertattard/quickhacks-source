@@ -8,8 +8,6 @@ permalink: docs/docker/jupyter/
 
 # Jupyter
 
----
-
 ## Docker Compose
 
 ### File: `docker-compose.yml`

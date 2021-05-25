@@ -11,8 +11,6 @@ permalink: docs/aws/terraform/rds-postgres-publicly-accessible/
 
 {% include custom/example_not_working.html details="The database is created but not publicly accessible as expected." %}
 
----
-
 ## Terraform
 
 {% include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}

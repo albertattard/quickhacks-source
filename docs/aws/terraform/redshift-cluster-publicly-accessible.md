@@ -9,8 +9,6 @@ permalink: docs/aws/terraform/redshift-cluster-publicly-accessible/
 
 # Redshift Cluster (Publicly Accessible)
 
----
-
 ## Terraform
 
 {% include custom/note.html details="Deployment may take few minute to create all required AWS resources." %}

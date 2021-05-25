@@ -9,8 +9,6 @@ permalink: docs/aws/terraform/lambda-api-gateway/
 
 # Lambda (API Gateway)
 
----
-
 ## Terraform
 
 ### File: `terraform.tf`

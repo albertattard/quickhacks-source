@@ -9,7 +9,7 @@ permalink: docs/testing/end-to-end/playwright/
 
 # Playwright
 
-{% include custom/pending.html details="I am still working on this" %}
+{% include custom/pending.html details="I am still working on this one" %}
 
 ## References
 

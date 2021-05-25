@@ -9,8 +9,6 @@ permalink: docs/java/apache-poi/read-excel-file/
 
 # Read Excel File
 
----
-
 ## File: `src/main/java/quickhack/Main.java`
 
 {% highlight java %}

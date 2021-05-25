@@ -8,8 +8,6 @@ permalink: docs/docker/cassandra/
 
 # Cassandra
 
----
-
 ## Docker Compose
 
 ### File: `docker-compose.yml`

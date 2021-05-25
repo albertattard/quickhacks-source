@@ -9,8 +9,6 @@ permalink: docs/aws/terraform/s3-cloud-front/
 
 # S3 & Cloud Front
 
----
-
 ## Terraform
 
 {% include custom/note.html details="Deployment may take several minute to create all required AWS resources. Don't be

@@ -11,8 +11,6 @@ permalink: docs/azure/terraform/vm-publicly-accessible/
 
 {% include custom/pending.html details="I am still working on this one" %}
 
----
-
 ## Terraform
 
 ### File: `terraform.tf`

@@ -9,8 +9,6 @@ permalink: docs/aws/cli/key-pair/
 
 # Key Pair (SSH Key)
 
----
-
 ## Create Key Pair
 
 The following make use of [jq](https://stedolan.github.io/jq/){:target="_blank"}, which can be installed using 

@@ -13,8 +13,6 @@ Java 11 introduced HTTP Client ([JEP-321](https://openjdk.java.net/jeps/321){:ta
 the [incubated](https://openjdk.java.net/jeps/11) HTTP Client API introduced
 in [JDK 9, via JEP 110](https://openjdk.java.net/jeps/110), and updated in JDK 10.
 
----
-
 ## File: `src/main/java/quickhack/Main.java`
 
 {% highlight java %}

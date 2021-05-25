@@ -11,10 +11,8 @@ permalink: docs/java/java-11/jep-330-launch-single-file-source-code-programs/
 
 Java 11 introduced Java Single File Execution ([JEP-330](https://openjdk.java.net/jeps/330){:target="_blank"}) which
 enhanced the java launcher to run a program supplied as a single file of Java source code, including usage from within a
-script by means of [“shebang” files](https://openjdk.java.net/jeps/330#Shebang_files){:target="_blank"} and related
+script by means of ["shebang" files](https://openjdk.java.net/jeps/330#Shebang_files){:target="_blank"} and related
 techniques.
-
----
 
 ## File: `hello`
 

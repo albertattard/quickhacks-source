@@ -9,8 +9,6 @@ permalink: docs/aws/cli/logs/
 
 # Logs
 
----
-
 ## Tail
 
 ```console

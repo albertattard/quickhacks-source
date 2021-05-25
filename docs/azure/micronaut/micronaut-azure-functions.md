@@ -11,8 +11,6 @@ permalink: docs/azure/micronaut/micronaut-azure-functions/
 
 {% include custom/pending.html details="I am still working on this one" %}
 
----
-
 ## Versions
 
 1. Java

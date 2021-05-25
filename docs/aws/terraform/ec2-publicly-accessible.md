@@ -9,8 +9,6 @@ permalink: docs/aws/terraform/ec2-publicly-accessible/
 
 # EC2 (Publicly Accessible)
 
----
-
 ## Acknowledgements
 
 _Punit Kumar_, for reviewing the diagram and providing feedback.

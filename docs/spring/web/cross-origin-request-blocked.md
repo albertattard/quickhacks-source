@@ -14,8 +14,6 @@ still carries out its task and make the changes requested. Only the response is 
 
 ![Cross-Origin Request Blocked]({{ "/assets/images/spring/web/cross-origin-request-blocked.png" | absolute_url }})
 
----
-
 ## File: `src/main/java/quickhacks/QuickhackController.java`
 
 {% highlight java %}

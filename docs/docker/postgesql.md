@@ -8,8 +8,6 @@ permalink: docs/docker/postgresql/
 
 # PostgreSQL
 
----
-
 ## Docker Compose
 
 ### File: `docker-compose.yml`

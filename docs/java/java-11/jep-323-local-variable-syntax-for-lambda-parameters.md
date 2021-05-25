@@ -9,8 +9,6 @@ permalink: docs/java/java-11/jep-323-local-variable-syntax-for-lambda-parameters
 
 # JEP 323: Local-Variable Syntax for Lambda Parameters
 
----
-
 ## File: `src/main/java/quickhack/Main.java`
 
 {% highlight java %}

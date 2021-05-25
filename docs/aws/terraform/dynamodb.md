@@ -9,8 +9,6 @@ permalink: docs/aws/terraform/dynamodb/
 
 # DynamoDB
 
----
-
 ## Terraform
 
 ### File: `terraform.tf`

@@ -15,8 +15,6 @@ allow classes that are logically part of the same code entity (source file), but
 files, to access each other's private members without the need for compilers to insert accessibility-broadening bridge
 methods.
 
----
-
 ## File: `src/main/java/quickhack/Main.java`
 
 {% highlight java %}
