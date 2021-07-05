@@ -14,10 +14,24 @@ still carries out its task and make the changes requested. Only the response is 
 
 ![Cross-Origin Request Blocked]({{ "/assets/images/spring/web/cross-origin-request-blocked.png" | absolute_url }})
 
-## File: `src/main/java/quickhacks/QuickhackController.java`
+Spring Security can be used to also block request that are not coming from trusted origins. Refer
+to [spring-security-cors]({{ "/docs/spring/web/spring-security-cors/" | absolute_url }}) for an
+example.
+
+## File: `src/main/java/quickhacks/CorsConfiguration.java`
 
 {% highlight java %}
-{% raw_include quickhacks/spring/web/cross-origin-request-blocked/src/main/java/quickhacks/QuickhackController.java %}
+{% raw_include quickhacks/spring/web/cross-origin-request-blocked/src/main/java/quickhacks/CorsConfiguration.java %}
+{% endhighlight %}
+
+## File: `src/test/java/quickhacks/CorsHeadersTest.java`
+
+{% include custom/note.html details="RestTemplate makes use of the HttpUrlConnection class, which has the
+   <code>Origin</code> header as one of the restricted headers. Set the <code>sun.net.http.allowRestrictedHeaders</code>
+   property to <code>true</code> so that the <code>Origin</code> header is also sent." %}
+
+{% highlight java %}
+{% raw_include quickhacks/spring/web/cross-origin-request-blocked/src/test/java/quickhacks/CorsHeadersTest.java %}
 {% endhighlight %}
 
 ## File: `build.gradle`
@@ -25,6 +39,28 @@ still carries out its task and make the changes requested. Only the response is 
 {% highlight gradle %}
 {% raw_include quickhacks/spring/web/cross-origin-request-blocked/build.gradle %}
 {% endhighlight %}
+
+## Commands
+
+- Run tests
+
+  ```console
+  $ ./gradlew check
+  ```
+
+- Run application
+
+  ```console
+  $ ./gradlew bootRun
+  ```
+
+- Make CURl request
+
+  ```console
+  $ curl -v \
+     -X "POST" "http://localhost:8080/quickhack/name?name=Quickhacks" \
+     -H "Origin: http://localhost:3000"
+  ```
 
 ## Versions
 

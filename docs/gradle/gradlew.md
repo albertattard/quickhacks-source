@@ -36,17 +36,19 @@ $ ./gradlew --version
 
 ## Set Version
 
-You can update, or downgrade, Gradle Wrapper version used
+You can update, or downgrade, Gradle Wrapper version used.
 
 ```console
-$ ./gradlew wrapper --gradle-version 7.0
+$ ./gradlew wrapper --gradle-version 7.1.1
 ```
+
+A list of Gradle releases can be found [here](https://gradle.org/releases/).
 
 It is recommended to set the SHA256 signature if the Gradle Wrapper to mitigate against man in the middle attacks, and
 verify that the correct version of Gradle Wrapper is used.
 
 ```console
-$ ./gradlew wrapper --gradle-distribution-sha256-sum=eb8b89184261025b0430f5b2233701ff1377f96da1ef5e278af6ae8bac5cc305
+$ ./gradlew wrapper --gradle-distribution-sha256-sum=bf8b869948901d422e9bb7d1fa61da6a6e19411baa7ad6ee929073df85d6365d
 ```
 
 A full list of SHA256 signatures is found [here](https://gradle.org/release-checksums/).
@@ -56,7 +58,7 @@ yet. The Gradle Wrapper distribution is not verified if this was already downloa
 next.
 
 ```console
-$ rm -rf ~/.gradle/wrapper/dists/gradle-7.0-bin
+$ rm -rf ~/.gradle/wrapper/dists/gradle-7.1.1-bin
 ```
 
 It is also good to verify the Gradle Wrapper JAR file as this is an important part of the build. GitHub provides
