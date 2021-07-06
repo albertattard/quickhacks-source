@@ -57,28 +57,19 @@ Execution failed for task ':dependencyCheckAnalyze'.
 
 ## Versions
 
-1. Gradle
+- Gradle
 
-   ```console
-   $ ./gradlew --version
+  ```console
+  $ ./gradlew --version
 
-   Gradle 7.0
+  Gradle 7.1.1
+  ```
 
-   Build time:   2021-04-09 22:27:31 UTC
-   Revision:     d5661e3f0e07a8caff705f1badf79fb5df8022c4
+- Java
 
-   Kotlin:       1.4.31
-   Groovy:       3.0.7
-   Ant:          Apache Ant(TM) version 1.10.9 compiled on September 27 2020
-   JVM:          16 (AdoptOpenJDK 16+36)
-   OS:           Mac OS X 10.16 x86_64
-   ```
-
-1. Java
-
-   ```console
-   $ java --version
-   openjdk 16 2021-03-16
-   OpenJDK Runtime Environment AdoptOpenJDK (build 16+36)
-   OpenJDK 64-Bit Server VM AdoptOpenJDK (build 16+36, mixed mode, sharing)
-   ```
+  ```console
+  $ java --version
+  openjdk 16 2021-03-16
+  OpenJDK Runtime Environment AdoptOpenJDK (build 16+36)
+  OpenJDK 64-Bit Server VM AdoptOpenJDK (build 16+36, mixed mode, sharing)
+  ```

@@ -54,16 +54,7 @@ permalink: docs/spring/docker/layering-jar/
   ```console
   $ ./gradlew --version
 
-  Gradle 7.0.2
-
-  Build time:   2021-05-14 12:02:31 UTC
-  Revision:     1ef1b260d39daacbf9357f9d8594a8a743e2152e
-
-  Kotlin:       1.4.31
-  Groovy:       3.0.7
-  Ant:          Apache Ant(TM) version 1.10.9 compiled on September 27 2020
-  JVM:          11.0.10 (AdoptOpenJDK 11.0.10+9)
-  OS:           Mac OS X 10.16 x86_64
+   Gradle 7.1.1
   ```
 
 - Docker
