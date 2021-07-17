@@ -1,0 +1,23 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "org.assertj:assertj-core:3.20.2"
+    testImplementation "org.junit.jupiter:junit-jupiter:5.8.0-M1"
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "failed", "passed", "skipped", "standard_out"
+        exceptionFormat "full"
+        showExceptions true
+        showCauses true
+        showStackTraces true
+    }
+}
