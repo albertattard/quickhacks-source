@@ -4,6 +4,7 @@ import static java.util.Objects.requireNonNull;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.BooleanSupplier;
 import java.util.function.Supplier;
 
@@ -35,21 +36,20 @@ public class FunctionalIfElseLadder<T> {
     public T orElse(final Supplier<T> supplier) {
         requireNonNull(supplier);
 
+        return asOptional()
+                .orElseGet(supplier);
+    }
+
+    public Optional<T> asOptional() {
         return options.stream()
                 .filter(PredicateSupplierPair::isTrue)
                 .findFirst()
-                .orElse(PredicateSupplierPair.ofTure(supplier))
-                .value();
+                .map(PredicateSupplierPair::value);
     }
 
     private static class PredicateSupplierPair<T> {
         private final BooleanSupplier predicate;
         private final Supplier<T> supplier;
-
-        public static <E> PredicateSupplierPair<E> ofTure(final Supplier<E> supplier) {
-            requireNonNull(supplier);
-            return of(() -> true, supplier);
-        }
 
         public static <E> PredicateSupplierPair<E> of(final BooleanSupplier predicate, final Supplier<E> supplier) {
             requireNonNull(predicate);

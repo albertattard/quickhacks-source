@@ -3,6 +3,7 @@ package quickhacks;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
 
+import java.util.Optional;
 import java.util.function.BooleanSupplier;
 import java.util.function.Supplier;
 
@@ -57,6 +58,21 @@ class FunctionalIfElseLadderTest {
         assertThat(result)
                 .describedAs("The else option is executed as non of the if options evaluated to true")
                 .isEqualTo(EXPECTED_RESULT);
+    }
+
+    @Test
+    @DisplayName("should return optional empty if none of the if options evaluates to true")
+    void shouldReturnOptionalEmptyIfNoneOfTheIfOptionsEvaluatesToTrue() {
+        /* Given/When */
+        final Optional<String> result = FunctionalIfElseLadder
+                .ifTrue(alwaysFalse(), failIfInvoked())
+                .elseIf(alwaysFalse(), failIfInvoked())
+                .asOptional();
+
+        /* Then */
+        assertThat(result)
+                .describedAs("An empty optional is returned")
+                .isNotPresent();
     }
 
     private static BooleanSupplier alwaysTrue() {
