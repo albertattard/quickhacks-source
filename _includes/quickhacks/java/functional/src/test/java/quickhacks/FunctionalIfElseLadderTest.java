@@ -3,6 +3,7 @@ package quickhacks;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
 
+import java.util.Locale;
 import java.util.Optional;
 import java.util.function.BooleanSupplier;
 import java.util.function.Supplier;
@@ -73,6 +74,21 @@ class FunctionalIfElseLadderTest {
         assertThat(result)
                 .describedAs("An empty optional is returned")
                 .isNotPresent();
+    }
+
+    @Test
+    @DisplayName("should return map the first if option that evaluates to true")
+    void shouldReturnMapTheFirstIfOptionThatEvaluatesToTrue() {
+        /* Given/When */
+        final Optional<String> result = FunctionalIfElseLadder
+                .ifTrue(alwaysFalse(), failIfInvoked())
+                .elseIf(alwaysTrue(), () -> EXPECTED_RESULT)
+                .map(s -> s.toUpperCase(Locale.ROOT));
+
+        /* Then */
+        assertThat(result)
+                .describedAs("An empty optional is returned")
+                .isEqualTo(Optional.of(EXPECTED_RESULT.toUpperCase(Locale.ROOT)));
     }
 
     private static BooleanSupplier alwaysTrue() {

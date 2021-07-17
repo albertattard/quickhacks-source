@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.BooleanSupplier;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class FunctionalIfElseLadder<T> {
@@ -38,6 +39,13 @@ public class FunctionalIfElseLadder<T> {
 
         return asOptional()
                 .orElseGet(supplier);
+    }
+
+    public <R> Optional<R> map(final Function<T, R> mapper) {
+        requireNonNull(mapper);
+
+        return asOptional()
+                .map(mapper);
     }
 
     public Optional<T> asOptional() {
