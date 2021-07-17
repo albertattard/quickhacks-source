@@ -87,7 +87,7 @@ class FunctionalIfElseLadderTest {
 
         /* Then */
         assertThat(result)
-                .describedAs("An empty optional is returned")
+                .describedAs("The mapped value is returned")
                 .isEqualTo(Optional.of(EXPECTED_RESULT.toUpperCase(Locale.ROOT)));
     }
 
