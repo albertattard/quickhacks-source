@@ -48,6 +48,15 @@ public class FunctionalIfElseLadder<T> {
                 .map(mapper);
     }
 
+    public <R> R map(final Function<T, R> mapper, final Supplier<R> supplier) {
+        requireNonNull(mapper);
+        requireNonNull(supplier);
+
+        return asOptional()
+                .map(mapper)
+                .orElseGet(supplier);
+    }
+
     public Optional<T> asOptional() {
         return options.stream()
                 .filter(PredicateSupplierPair::isTrue)

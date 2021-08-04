@@ -2,7 +2,7 @@
 layout: default
 title: SSH Authentication
 parent: Git
-nav_order: 19
+nav_order: 19.2
 permalink: docs/git/ssh-authentication/
 ---
 
